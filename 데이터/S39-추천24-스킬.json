@@ -1,0 +1,1246 @@
+{
+  "catalog_sha256": "727e2d57b22a170392929c4dd69d5a18ac1a579ff9e5c5191e0ea48e41d845c8",
+  "catalog_retrieved_at": "2026-11-23T06:00:00+00:00",
+  "game_version": null,
+  "monsters": {
+    "18611": {
+      "alias": "물선인",
+      "name": "Woosa",
+      "base_speed": 118,
+      "leader": {
+        "id": 157,
+        "url": "https://swarfarm.com/api/v2/leader-skills/157/",
+        "attribute": "Accuracy",
+        "amount": 41,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/649/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 18611,
+          "skill_id": 1187,
+          "slot": 1,
+          "name": "Yin Yang Attack",
+          "passive": false,
+          "description_ko": "자신의 최대 체력에 비례하는 피해를 주고, 기본 20% 확률로 적 1명에게 2턴 수면을 겁니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 18611,
+          "skill_id": 1194,
+          "slot": 2,
+          "name": "Mountain's Power",
+          "passive": false,
+          "description_ko": "적 1명에게 자신의 최대 체력 20%만큼 고정 피해를 줍니다. 모든 아군의 체력을 자신의 최대 체력 15%만큼 회복합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 18611,
+          "skill_id": 1197,
+          "slot": 3,
+          "name": "Wish of Immortality",
+          "passive": false,
+          "description_ko": "모든 아군에게 3턴간 면역과 자신의 최대 체력 15%만큼의 실드를 부여합니다.",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 4
+        }
+      ]
+    },
+    "16813": {
+      "alias": "풍오공",
+      "name": "Xing Zhe",
+      "base_speed": 117,
+      "leader": {
+        "id": 144,
+        "url": "https://swarfarm.com/api/v2/leader-skills/144/",
+        "attribute": "Attack Speed",
+        "amount": 24,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/573/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 16813,
+          "skill_id": 1128,
+          "slot": 1,
+          "name": "Monkey Wand",
+          "passive": false,
+          "description_ko": "적 1명을 공격해 기본 35% 확률로 1턴 기절시킵니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 16813,
+          "skill_id": 1132,
+          "slot": 2,
+          "name": "Lightning Monkey Wand",
+          "passive": false,
+          "description_ko": "적 1명을 공격해 기본 75% 확률로 2턴간 방어력을 낮춥니다. 자신의 공격 게이지를 50% 채웁니다.",
+          "base_cooldown": 3,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 16813,
+          "skill_id": 1138,
+          "slot": 3,
+          "name": "Stone Monkey (Passive)",
+          "passive": true,
+          "description_ko": "자신이 받는 피해를 35% 줄이고, 다른 아군이 공격받으면 기본 35% 확률로 반격합니다. 이 패시브로 반격할 때 약화 효과 발동률이 50% 증가하고 대상의 강화 효과를 1개 제거합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "33312": {
+      "alias": "불듀크",
+      "name": "Paul Phoenix",
+      "base_speed": 105,
+      "leader": {
+        "id": 214,
+        "url": "https://swarfarm.com/api/v2/leader-skills/214/",
+        "attribute": "Defense",
+        "amount": 38,
+        "area": "Guild",
+        "element": null,
+        "applies_in_rta": false
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/2760/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 33312,
+          "skill_id": 4782,
+          "slot": 1,
+          "name": "Moonfall",
+          "passive": false,
+          "description_ko": "자신의 최대 체력에 비례하는 피해를 주고, 각각 기본 35% 확률로 적 1명의 강화 효과를 1개 제거하고 1턴간 도발합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 33312,
+          "skill_id": 4787,
+          "slot": 2,
+          "name": "Phoenix Smasher",
+          "passive": false,
+          "description_ko": "자신의 최대 체력에 비례하는 피해로 적 1명을 두 번 공격합니다. 첫 타는 기본 50% 확률로 2턴간 저항 불가를 걸고, 둘째 타는 기본 65% 확률로 1턴 기절시킵니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 33312,
+          "skill_id": 4792,
+          "slot": 3,
+          "name": "Big Bang Phoenix Smasher",
+          "passive": false,
+          "description_ko": "모든 아군의 공격 게이지를 15% 채운 뒤, 적 1명에게 자신의 최대 체력에 비례하는 피해를 줍니다. 빗맞지 않으면 자신의 최대 체력 40%만큼 추가 피해를 줍니다.",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 4
+        }
+      ]
+    },
+    "16611": {
+      "alias": "물드래곤나이트",
+      "name": "Chow",
+      "base_speed": 100,
+      "leader": {
+        "id": 149,
+        "url": "https://swarfarm.com/api/v2/leader-skills/149/",
+        "attribute": "Defense",
+        "amount": 50,
+        "area": "Element",
+        "element": "Water",
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/635/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 16611,
+          "skill_id": 1085,
+          "slot": 1,
+          "name": "Dragon's Might",
+          "passive": false,
+          "description_ko": "적 1명을 공격해 치명타가 나면 2턴간 지속피해를 겁니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 16611,
+          "skill_id": 1422,
+          "slot": 2,
+          "name": "Justice",
+          "passive": false,
+          "description_ko": "적 1명의 피해를 줄이는 강화 효과를 무시하고 공격합니다. 쓰러진 아군이 많을수록 피해가 커집니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 16611,
+          "skill_id": 1095,
+          "slot": 3,
+          "name": "Flow (Passive)",
+          "passive": true,
+          "description_ko": "회복 방해에 면역이며, 자신의 턴 시작에 자신에게 걸린 약화 효과를 2개 제거하고 최대 체력의 15%를 회복합니다. 자신의 현재 체력에 비례해 주는 피해가 증가합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "28915": {
+      "alias": "암도깨비",
+      "name": "Gapsoo",
+      "base_speed": 96,
+      "leader": {
+        "id": 229,
+        "url": "https://swarfarm.com/api/v2/leader-skills/229/",
+        "attribute": "HP",
+        "amount": 50,
+        "area": "General",
+        "element": "Dark",
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/2324/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 28915,
+          "skill_id": 4010,
+          "slot": 1,
+          "name": "Violent Swing",
+          "passive": false,
+          "description_ko": "자신의 최대 체력에 비례하는 피해를 주고, 기본 15% 확률로 적 1명을 1턴 기절시킵니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 28915,
+          "skill_id": 4015,
+          "slot": 2,
+          "name": "Magical Gourd Bottle",
+          "passive": false,
+          "description_ko": "적 1명에게 자신의 최대 체력 15%만큼 고정 피해를 주고, 대상의 강화 효과를 1개 빼앗습니다. 대상에게 강화 효과가 없으면 2턴간 낙인을 겁니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 28915,
+          "skill_id": 4020,
+          "slot": 3,
+          "name": "Dokkaebi's Secret Spell (Passive)",
+          "passive": true,
+          "description_ko": "적이 체력을 회복할 때마다 자신의 공격 게이지가 10% 증가하며, 한 턴에 최대 30%까지 증가합니다. 자신이 턴을 얻으면 체력 상태가 가장 나쁜 아군의 약화 효과를 1개 제거하고 그 아군의 체력을 10% 회복합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "21811": {
+      "alias": "물팔라딘",
+      "name": "Josephine",
+      "base_speed": 102,
+      "leader": {
+        "id": 157,
+        "url": "https://swarfarm.com/api/v2/leader-skills/157/",
+        "attribute": "Accuracy",
+        "amount": 41,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/1163/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 21811,
+          "skill_id": 1938,
+          "slot": 1,
+          "name": "Justice Strike",
+          "passive": false,
+          "description_ko": "적 1명에게 확정 치명타로 공격하고, 기본 55% 확률로 1턴 기절시킵니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 21811,
+          "skill_id": 1928,
+          "slot": 2,
+          "name": "Fury of Punishment",
+          "passive": false,
+          "description_ko": "적 1명을 두 번 공격하며, 첫 타는 기본 75% 확률로 강화 효과를 모두 제거하고 둘째 타는 기본 75% 확률로 1턴 도발합니다(강화 효과가 없는 적에게는 2턴). 이후 자신에게 2턴간 반격 강화 효과를 부여합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 21811,
+          "skill_id": 1933,
+          "slot": 3,
+          "name": "Heavenly Blessing (Passive)",
+          "passive": true,
+          "description_ko": "자신을 포함한 아군이 행동불능에 걸리면 모든 아군에게 자신의 체력 30%만큼 2턴 실드를 부여합니다. 자신의 약화 효과를 모두 해제한 뒤 공격한 적에게 패시브로 반격하고 즉시 턴을 얻습니다.",
+          "base_cooldown": 6,
+          "max_skill_cooldown": 3
+        }
+      ]
+    },
+    "16812": {
+      "alias": "불오공",
+      "name": "Mei Hou Wang",
+      "base_speed": 116,
+      "leader": {
+        "id": 158,
+        "url": "https://swarfarm.com/api/v2/leader-skills/158/",
+        "attribute": "Defense",
+        "amount": 33,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/282/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 16812,
+          "skill_id": 1126,
+          "slot": 1,
+          "name": "Monkey Wand",
+          "passive": false,
+          "description_ko": "적 1명을 공격해 기본 35% 확률로 1턴 기절시킵니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 16812,
+          "skill_id": 1131,
+          "slot": 2,
+          "name": "Fire Monkey Wand",
+          "passive": false,
+          "description_ko": "적 1명을 공격해 기본 75% 확률로 2턴간 방어력을 낮춥니다. 자신의 체력을 20% 회복합니다.",
+          "base_cooldown": 3,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 16812,
+          "skill_id": 1136,
+          "slot": 3,
+          "name": "Gold Headband (Passive)",
+          "passive": true,
+          "description_ko": "패시브로 행동불능에 면역입니다. 적의 턴이 끝날 때 또는 자신이 공격받을 때마다 자신의 공격력이 20%, 공격속도가 12%씩 증가하며 최대 10회 중첩됩니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "23711": {
+      "alias": "물화백",
+      "name": "Haegang",
+      "base_speed": 102,
+      "leader": {
+        "id": 202,
+        "url": "https://swarfarm.com/api/v2/leader-skills/202/",
+        "attribute": "Attack Power",
+        "amount": 50,
+        "area": "Element",
+        "element": "Water",
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/1602/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 23711,
+          "skill_id": 2686,
+          "slot": 1,
+          "name": "Mark of Brush Tip",
+          "passive": false,
+          "description_ko": "적 1명을 공격해 기본 50% 확률로 공격 게이지를 30% 낮춥니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 23711,
+          "skill_id": 3100,
+          "slot": 2,
+          "name": "Moon Drawn by Clouds",
+          "passive": false,
+          "description_ko": "모든 적을 공격해 각각 기본 75% 확률로 강화 효과를 모두 제거하고, 2턴간 빗맞음 확률을 높입니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 23711,
+          "skill_id": 2696,
+          "slot": 3,
+          "name": "Art of Blank Space (Passive)",
+          "passive": true,
+          "description_ko": "적이나 아군이 약화 효과를 해제하면 모든 아군의 공격 게이지가 20% 증가합니다. 적이 아군의 강화 효과를 제거하면, 제거당한 아군의 약화 효과를 모두 해제하고 그 아군의 공격 게이지를 20% 채웁니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "13812": {
+      "alias": "불발키리",
+      "name": "Vanessa",
+      "base_speed": 101,
+      "leader": {
+        "id": 167,
+        "url": "https://swarfarm.com/api/v2/leader-skills/167/",
+        "attribute": "Attack Speed",
+        "amount": 33,
+        "area": "Arena",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/294/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 13812,
+          "skill_id": 1233,
+          "slot": 1,
+          "name": "Sword of Promise",
+          "passive": false,
+          "description_ko": "적 하나를 공격하고 20% 확률로 대상의 각 스킬 재사용 대기시간을 1턴씩 늘립니다. 이 공격으로 적을 처치하면 2스킬을 자동으로 사용합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 13812,
+          "skill_id": 1240,
+          "slot": 2,
+          "name": "Seal of Fire",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 강화효과 1개를 제거하고 2턴간 방어력을 낮춥니다. 피해는 적의 최대 체력에 비례합니다.",
+          "base_cooldown": 3,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 13812,
+          "skill_id": 1243,
+          "slot": 3,
+          "name": "Warrior's Return",
+          "passive": false,
+          "description_ko": "죽은 아군 하나를 체력 30%로 부활시키고 1턴간 공격력 증가를 부여합니다. 스킬을 쓸 수 있을 때 다른 아군이 사망에 이르는 피해를 받으면 즉시 발동합니다. 이 스킬로 아군을 부활시킬 때마다 최대 재사용 대기시간이 2턴 늘어나며, 최대 2회 누적됩니다.",
+          "cooldown_note": "부활로 늘어나기 전",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 2
+        }
+      ]
+    },
+    "16613": {
+      "alias": "풍드래곤나이트",
+      "name": "Leo",
+      "base_speed": 100,
+      "leader": {
+        "id": 148,
+        "url": "https://swarfarm.com/api/v2/leader-skills/148/",
+        "attribute": "Defense",
+        "amount": 50,
+        "area": "Element",
+        "element": "Wind",
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/567/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 16613,
+          "skill_id": 1086,
+          "slot": 1,
+          "name": "Dragon's Might",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 치명타가 나면 2턴간 지속피해를 부여합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 16613,
+          "skill_id": 1090,
+          "slot": 2,
+          "name": "Torrent",
+          "passive": false,
+          "description_ko": "적 하나를 공격합니다. 자신의 남은 체력이 낮을수록 피해가 증가하며, 자신의 체력이 30% 미만이면 대상의 방어력을 무시합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 16613,
+          "skill_id": 1096,
+          "slot": 3,
+          "name": "Eye of the Storm (Passive)",
+          "passive": true,
+          "description_ko": "적과 아군 모두의 공격속도 상한을 자신의 공격속도로 제한합니다. 같은 스킬을 가진 적과 보스에게는 속도 제한이 적용되지 않습니다. 공격할 때 대상의 공격 게이지를 15% 낮춥니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "16811": {
+      "alias": "물오공",
+      "name": "Shi Hou",
+      "base_speed": 115,
+      "leader": {
+        "id": 142,
+        "url": "https://swarfarm.com/api/v2/leader-skills/142/",
+        "attribute": "Attack Power",
+        "amount": 33,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/641/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 16811,
+          "skill_id": 1127,
+          "slot": 1,
+          "name": "Monkey Wand",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 35% 확률로 1턴간 기절시킵니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 16811,
+          "skill_id": 1134,
+          "slot": 2,
+          "name": "All or Nothing",
+          "passive": false,
+          "description_ko": "모든 적을 공격해 75% 확률로 1턴간 기절시킵니다. 공격 후 기절한 적 하나당 자신의 공격 게이지가 25% 증가합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 16811,
+          "skill_id": 1137,
+          "slot": 3,
+          "name": "Alter Ego Attack",
+          "passive": false,
+          "description_ko": "적 하나를 6회 공격합니다. 타격마다 강화효과 1개를 제거하고 25% 확률로 1턴간 기절시킵니다. 자신에게 2턴간 면역과 무적을 부여합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        }
+      ]
+    },
+    "35913": {
+      "alias": "풍슈타르크",
+      "name": "Stark",
+      "base_speed": 99,
+      "leader": {
+        "id": 219,
+        "url": "https://swarfarm.com/api/v2/leader-skills/219/",
+        "attribute": "HP",
+        "amount": 28,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/3055/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 35913,
+          "skill_id": 5323,
+          "slot": 1,
+          "name": "Heavy Strike",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 자신의 최대 체력에 비례한 피해를 줍니다. 공격 후 체력이 70% 미만인 아군이 있으면 자신에게 단일 대상 공격 1회 동안 위협을 부여합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 35913,
+          "skill_id": 5328,
+          "slot": 2,
+          "name": "Vanguard Duties",
+          "passive": false,
+          "description_ko": "모든 적을 공격해 50% 확률로 강화효과 1개를 제거하고, 80% 확률로 1턴간 도발합니다. 피해는 자신의 최대 체력에 비례합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 35913,
+          "skill_id": 5333,
+          "slot": 3,
+          "name": "One Step Ahead (Passive)",
+          "passive": true,
+          "description_ko": "적에게 공격받을 때마다 자신의 공격 게이지가 20% 증가합니다. 아군 전체의 체력 상태가 나쁠수록 주는 피해가 늘고, 쓰러진 아군 하나당 주는 피해가 100% 증가합니다. 피해 증가량은 최대 200%입니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "19212": {
+      "alias": "불이프리트",
+      "name": "Tesarion",
+      "base_speed": 100,
+      "leader": {
+        "id": 146,
+        "url": "https://swarfarm.com/api/v2/leader-skills/146/",
+        "attribute": "Resistance",
+        "amount": 41,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/280/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 19212,
+          "skill_id": 1114,
+          "slot": 1,
+          "name": "Mega Smash",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 50% 확률로 2턴간 지속피해를 부여합니다. 자신의 공격속도가 높을수록 피해가 증가합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 19212,
+          "skill_id": 1118,
+          "slot": 2,
+          "name": "Triple Crush",
+          "passive": false,
+          "description_ko": "적 하나를 3회 공격해 타격마다 50% 확률로 2턴간 방어력을 낮춥니다. 자신의 공격속도가 높을수록 피해가 증가합니다.",
+          "base_cooldown": 2,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 19212,
+          "skill_id": 1122,
+          "slot": 3,
+          "name": "Ancient Power (Passive)",
+          "passive": true,
+          "description_ko": "약화효과가 없는 적에게 받는 피해가 30% 감소하고, 약화효과가 있는 적에게 주는 피해가 30% 증가합니다. 보스를 제외한 적을 공격하면 2턴간 망각을 부여합니다. 이미 망각 상태인 적을 공격하면 망각 지속시간이 3턴이 됩니다. 망각 상태에서는 패시브가 발동하지 않습니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "19712": {
+      "alias": "불해왕",
+      "name": "Okeanos",
+      "base_speed": 101,
+      "leader": {
+        "id": 157,
+        "url": "https://swarfarm.com/api/v2/leader-skills/157/",
+        "attribute": "Accuracy",
+        "amount": 41,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/845/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 19712,
+          "skill_id": 1218,
+          "slot": 1,
+          "name": "Power Surge",
+          "passive": false,
+          "description_ko": "적 하나를 공격하며 자신에게 걸린 약화효과 2개를 대상에게 옮깁니다. 옮길 약화효과가 없으면 피해가 15% 증가합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 19712,
+          "skill_id": 1223,
+          "slot": 2,
+          "name": "Spear of Devastation",
+          "passive": false,
+          "description_ko": "적 하나를 2회 공격합니다. 타격마다 강화효과 1개를 제거하고 대상 스킬의 재사용 대기시간을 최대로 늘립니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 19712,
+          "skill_id": 1228,
+          "slot": 3,
+          "name": "Rain of Stones",
+          "passive": false,
+          "description_ko": "모든 적을 3~5회 공격합니다. 타격마다 35% 확률로 1턴간 기절시키고, 35% 확률로 공격 게이지를 10% 흡수합니다. 약화효과가 있는 적에게는 피해가 50% 증가합니다.",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 4
+        }
+      ]
+    },
+    "30713": {
+      "alias": "풍드라칸 전사",
+      "name": "Ereshion",
+      "base_speed": 101,
+      "leader": {
+        "id": 167,
+        "url": "https://swarfarm.com/api/v2/leader-skills/167/",
+        "attribute": "Attack Speed",
+        "amount": 33,
+        "area": "Arena",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/2551/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 30713,
+          "skill_id": 4473,
+          "slot": 1,
+          "name": "Continuous Slash",
+          "passive": false,
+          "description_ko": "적 하나를 2회 공격해 타격마다 35% 확률로 2턴간 방어력을 낮춥니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 30713,
+          "skill_id": 4478,
+          "slot": 2,
+          "name": "Dragon's Breath",
+          "passive": false,
+          "description_ko": "모든 적을 2회 공격해 자신의 방어력에 비례한 피해를 줍니다. 타격마다 40% 확률로 2턴간 체력 회복을 방해하고, 40% 확률로 공격 게이지를 10% 흡수합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 30713,
+          "skill_id": 4483,
+          "slot": 3,
+          "name": "Dragon Bombardment",
+          "passive": false,
+          "description_ko": "모든 적을 공격해 자신의 방어력에 비례한 피해를 주고 강화효과를 모두 제거합니다. 강화효과가 제거된 적의 체력을 15% 감소시킵니다. 보스에게는 10%를 적용합니다.",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 4
+        }
+      ]
+    },
+    "15712": {
+      "alias": "불오라클",
+      "name": "Juno",
+      "base_speed": 100,
+      "leader": {
+        "id": 145,
+        "url": "https://swarfarm.com/api/v2/leader-skills/145/",
+        "attribute": "Critical Rate",
+        "amount": 24,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/286/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 15712,
+          "skill_id": 1156,
+          "slot": 1,
+          "name": "Passing Time",
+          "passive": false,
+          "description_ko": "적 하나를 3회 공격합니다. 치명타가 발생한 타격마다 자신의 공격 게이지가 10% 증가합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 15712,
+          "skill_id": 1163,
+          "slot": 2,
+          "name": "Predicted Future",
+          "passive": false,
+          "description_ko": "모든 적을 공격해 80% 확률로 강화효과를 모두 제거합니다. 각 적에게서 제거한 강화효과 수만큼 2턴간 지속피해를 부여합니다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 15712,
+          "skill_id": 1166,
+          "slot": 3,
+          "name": "Loss of Cause and Effect (Passive)",
+          "passive": true,
+          "description_ko": "자신이 약화효과를 받으면 2턴간 공격속도가 증가합니다. 자신의 턴을 약화효과가 걸린 상태로 시작하면 그 약화효과를 모두 제거합니다. 제거한 약화효과 하나당 자신의 최대 체력 10%만큼 아군 전체의 체력을 회복합니다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "34712": {
+      "alias": "불레골라스",
+      "name": "Legolas",
+      "base_speed": 104,
+      "leader": {
+        "id": 185,
+        "url": "https://swarfarm.com/api/v2/leader-skills/185/",
+        "attribute": "HP",
+        "amount": 38,
+        "area": "Arena",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/2909/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 34712,
+          "skill_id": 5068,
+          "slot": 1,
+          "name": "Sindar's Volley",
+          "passive": false,
+          "description_ko": "적 하나를 두 번 공격한다. 50% 확률로 추가 공격을 시도하며 추가 타격은 최대 세 번이다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 34712,
+          "skill_id": 5073,
+          "slot": 2,
+          "name": "Power of Mirkwood",
+          "passive": false,
+          "description_ko": "자신의 공격력과 공속을 2턴 높이고 즉시 턴을 얻는다.",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 34712,
+          "skill_id": 5078,
+          "slot": 3,
+          "name": "Galadhrim Bow (Passive)",
+          "passive": true,
+          "description_ko": "공격할 때 40% 확률로 적 게이지를 15% 흡수하고, 별도로 40% 확률로 강화 하나를 훔친다. 자신에게 걸린 강화효과 하나당 약화효과 발동률이 20%씩 높아진다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "31311": {
+      "alias": "물사령 공주",
+      "name": "Lamiella",
+      "base_speed": 100,
+      "leader": {
+        "id": 182,
+        "url": "https://swarfarm.com/api/v2/leader-skills/182/",
+        "attribute": "HP",
+        "amount": 44,
+        "area": "Guild",
+        "element": null,
+        "applies_in_rta": false
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/2616/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 31311,
+          "skill_id": 4559,
+          "slot": 1,
+          "name": "Soul Touch",
+          "passive": false,
+          "description_ko": "최대 체력 비례 단일 공격. 50% 확률로 적 공격 게이지를 15% 흡수한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 31311,
+          "skill_id": 4564,
+          "slot": 2,
+          "name": "Arsenal of Sacrifice",
+          "passive": false,
+          "description_ko": "자신의 최대 체력과 무기고에 쌓인 제물의 비율에 따라 모든 적에게 피해를 분배한다. 무기고가 가득 찬 채 쓰면 제물을 모두 소비한다. 전장의 아군·적이 받은 피해로 충전되며 한 유닛이 죽으면 즉시 가득 찬다.",
+          "base_cooldown": 6,
+          "max_skill_cooldown": 4
+        },
+        {
+          "form": "출전",
+          "form_id": 31311,
+          "skill_id": 4569,
+          "slot": 3,
+          "name": "Necromancy: Knights",
+          "passive": false,
+          "description_ko": "최대 체력에 비례해 적 전체를 세 번 공격하고, 1턴 도발과 2턴 낙인을 시도한다.",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 4
+        }
+      ]
+    },
+    "26813": {
+      "alias": "풍푸딩 공주",
+      "name": "Angela",
+      "base_speed": 96,
+      "leader": {
+        "id": 166,
+        "url": "https://swarfarm.com/api/v2/leader-skills/166/",
+        "attribute": "Resistance",
+        "amount": 55,
+        "area": "Arena",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/2023/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 26813,
+          "skill_id": 3451,
+          "slot": 1,
+          "name": "Sweet Magic",
+          "passive": false,
+          "description_ko": "적 하나를 공격하고, 체력 비율이 가장 낮은 아군을 시전자 최대 체력의 10%만큼 회복한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 26813,
+          "skill_id": 3456,
+          "slot": 2,
+          "name": "Soft Pudding",
+          "passive": false,
+          "description_ko": "아군 전체 체력을 15% 회복시키고, 시전자 최대 체력의 20%에 해당하는 실드를 2턴 건다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 26813,
+          "skill_id": 3461,
+          "slot": 3,
+          "name": "Bittersweet Taste (Passive)",
+          "passive": true,
+          "description_ko": "실드가 있는 아군이 공격받으면 실드가 받은 피해의 50%를 공격자에게 돌려준다. 자신의 턴 시작 때 체력 비율이 가장 낮은 아군의 약화 2개를 제거하고 시전자 최대 체력의 15% 실드를 2턴 건다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "23512": {
+      "alias": "불비스트라이더",
+      "name": "Masha",
+      "base_speed": 123,
+      "leader": null,
+      "source_url": "https://swarfarm.com/api/v2/monsters/1340/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 23512,
+          "skill_id": 2403,
+          "slot": 1,
+          "name": "Spear of Protector",
+          "passive": false,
+          "description_ko": "단일 공격으로 30% 확률로 공속을 2턴 줄인다. 상대보다 공속이 높을수록 피해가 커진다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 23512,
+          "skill_id": 2408,
+          "slot": 2,
+          "name": "Fast Link",
+          "passive": false,
+          "description_ko": "공속 비례 단일 2타. 야수가 1턴 방깎을 시도한 뒤 기수가 친다. 기수의 타격은 대상의 약화효과 개수에 따라 하나당 적 게이지를 25% 줄이고 자기 게이지를 25% 올린다.",
+          "verified_url": "https://www.swlens.io/ko/webapp/monster/23512-masha-fire-beast-rider",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 23512,
+          "skill_id": 2413,
+          "slot": 3,
+          "name": "Wild Steps (Passive)",
+          "passive": true,
+          "description_ko": "자기 턴에 공격하면 1턴 면역을 얻고, 적의 게이지 감소 스킬에 받는 효과가 절반으로 줄어든다. 적 스킬로 아군 게이지가 감소할 때 자기 공속이 10%씩 최대 5회 오른다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 23512,
+          "skill_id": 2418,
+          "slot": 4,
+          "name": "Rider (Passive)",
+          "passive": true,
+          "description_ko": "죽을 피해를 받으면 야수에서 내려 기수 상태로 전투를 이어간다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "하차",
+          "form_id": 23612,
+          "skill_id": 2423,
+          "slot": 1,
+          "name": "Spear of Protector",
+          "passive": false,
+          "description_ko": "단일 공격으로 30% 확률로 2턴 공속 감소를 시도한다. 상대보다 빠를수록 피해가 증가한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "하차",
+          "form_id": 23612,
+          "skill_id": 2428,
+          "slot": 2,
+          "name": "Fast Spear Throw",
+          "passive": false,
+          "description_ko": "공속 비례 단일 공격. 대상의 약화효과 하나마다 적 게이지가 25% 내려가고 자기 게이지가 25% 올라가는 효과를 노린다.",
+          "verified_url": "https://www.swlens.io/ko/webapp/monster/23512-masha-fire-beast-rider",
+          "base_cooldown": 5,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "하차",
+          "form_id": 23612,
+          "skill_id": 2433,
+          "slot": 3,
+          "name": "Revengeful Thought (Passive)",
+          "passive": true,
+          "description_ko": "낙마하면 자신의 최대 체력이 50% 줄고 공속이 15%, 적에게 주는 피해가 100% 증가한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "14714": {
+      "alias": "빛뱀파이어",
+      "name": "Julianne",
+      "base_speed": 99,
+      "leader": {
+        "id": 131,
+        "url": "https://swarfarm.com/api/v2/leader-skills/131/",
+        "attribute": "Attack Power",
+        "amount": 38,
+        "area": "Dungeon",
+        "element": null,
+        "applies_in_rta": false
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/725/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 14714,
+          "skill_id": 1008,
+          "slot": 1,
+          "name": "Vampire Bat",
+          "passive": false,
+          "description_ko": "적을 두 번 공격하고 준 피해의 30%만큼 자신을 회복한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 14714,
+          "skill_id": 1471,
+          "slot": 2,
+          "name": "Noble Agreement",
+          "passive": false,
+          "description_ko": "단일 2타, 기본 50% 확률로 1턴 기절을 시도한다. 스킬 자체 치확이 30% 높고 공속이 높을수록 피해가 증가한다.",
+          "base_cooldown": 3,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 14714,
+          "skill_id": 1018,
+          "slot": 3,
+          "name": "Immortality (Passive)",
+          "passive": true,
+          "description_ko": "자신의 턴 시작에 자기 약화를 모두 지운다. 죽을 피해를 받으면 다른 아군 각각에서 체력 10%를 흡수한다. 체력 비율 30% 이하의 아군에게서는 흡수할 수 없다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "22611": {
+      "alias": "물뇌제",
+      "name": "Bolverk",
+      "base_speed": 102,
+      "leader": {
+        "id": 182,
+        "url": "https://swarfarm.com/api/v2/leader-skills/182/",
+        "attribute": "HP",
+        "amount": 44,
+        "area": "Guild",
+        "element": null,
+        "applies_in_rta": false
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/1248/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 22611,
+          "skill_id": 2082,
+          "slot": 1,
+          "name": "Lightning Strike",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 50% 확률로 강화 하나를 훔친다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 22611,
+          "skill_id": 2087,
+          "slot": 2,
+          "name": "Learn Knowledge (Passive)",
+          "passive": true,
+          "description_ko": "자신 또는 적에게 강화효과가 부여되면 부여된 수만큼 지식을 얻는다. 자신의 턴 시작 시 지식이 2개 이하면 1개를 추가하며 최대 5개까지 보유한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 22611,
+          "skill_id": 2092,
+          "slot": 3,
+          "name": "Forbidden Galdr",
+          "passive": false,
+          "description_ko": "지식 1~4개면 개당 적 현재 체력의 10%, 5개면 적 최대 체력의 50%에 해당하는 체력을 감소시킨다. 감소시킨 양으로 아군 전체를 회복하고 지식을 모두 소비한다. 보스에게는 적용되지 않는다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    },
+    "24511": {
+      "alias": "물스트라이커",
+      "name": "Moore",
+      "base_speed": 105,
+      "leader": {
+        "id": 144,
+        "url": "https://swarfarm.com/api/v2/leader-skills/144/",
+        "attribute": "Attack Speed",
+        "amount": 24,
+        "area": "General",
+        "element": null,
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/1677/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 24511,
+          "skill_id": 2793,
+          "slot": 1,
+          "name": "Mach Punch",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 50% 확률로 2턴 공격력 감소를 시도한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 24511,
+          "skill_id": 2798,
+          "slot": 2,
+          "name": "Rolling Spike",
+          "passive": false,
+          "description_ko": "적 전체를 세 번 공격한다. 타격마다 20% 확률로 강화 하나를 지우고, 30% 확률로 게이지를 10~15% 흡수한다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        },
+        {
+          "form": "출전",
+          "form_id": 24511,
+          "skill_id": 2803,
+          "slot": 3,
+          "name": "Overdrive (Passive)",
+          "passive": true,
+          "description_ko": "상대 턴에 자신이 피해를 받으면 그 피해를 상쇄하고 자신의 게이지를 가득 채우며 자신에게 1턴 공격력 증가를 건다. 패시브가 다시 준비되기 전에는 다음 타격이 그대로 들어올 수 있다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 3
+        }
+      ]
+    },
+    "16612": {
+      "alias": "불드래곤나이트",
+      "name": "Laika",
+      "base_speed": 100,
+      "leader": {
+        "id": 147,
+        "url": "https://swarfarm.com/api/v2/leader-skills/147/",
+        "attribute": "Defense",
+        "amount": 50,
+        "area": "Element",
+        "element": "Fire",
+        "applies_in_rta": true
+      },
+      "source_url": "https://swarfarm.com/api/v2/monsters/276/",
+      "skills": [
+        {
+          "form": "출전",
+          "form_id": 16612,
+          "skill_id": 2643,
+          "slot": 1,
+          "name": "Dragon's Might",
+          "passive": false,
+          "description_ko": "적 하나를 공격해 준 피해의 50%만큼 자신을 회복한다. 치명타가 나면 2턴 지속 피해를 건다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        },
+        {
+          "form": "출전",
+          "form_id": 16612,
+          "skill_id": 1092,
+          "slot": 2,
+          "name": "Justice",
+          "passive": false,
+          "description_ko": "받는 피해를 줄이는 적의 강화 효과를 무시하고 공격한다. 전투 불능인 아군이 많을수록 피해가 증가한다.",
+          "base_cooldown": 4,
+          "max_skill_cooldown": 2
+        },
+        {
+          "form": "출전",
+          "form_id": 16612,
+          "skill_id": 1094,
+          "slot": 3,
+          "name": "Noble Blood (Passive)",
+          "passive": true,
+          "description_ko": "자신의 공격에는 빗맞음이 뜨지 않는다. 피격 시 한 타당 받는 피해가 자기 최대 체력의 24%를 넘지 않으며 50% 확률로 자신을 공격한 적에게 반격한다.",
+          "base_cooldown": null,
+          "max_skill_cooldown": null
+        }
+      ]
+    }
+  }
+}
