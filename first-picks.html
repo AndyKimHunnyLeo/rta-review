@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<html data-rta-page="first-picks" lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>상대 선픽 대응표 · 시즌 39 TOP 15</title><style>:root{color-scheme:light;--ink:#182d28;--muted:#536a61;--green:#135844;--line:#d5dfd9;--paper:#fafbf7;--teal:#dcefe4;--warm:#fff2d5}
 *{box-sizing:border-box}
 html{font:16px/1.55 system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink);word-break:keep-all;overflow-wrap:anywhere}
@@ -132,20 +132,323 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 #opinion-dialog #opinion-storage, #opinion-dialog #opinion-status, #opinion-dialog .opinion-empty {color:#496557; font-size:.85rem}
 #opinion-dialog #opinion-status:empty {display:none}
 @media print {#opinion-dock, #opinion-dialog, .opinion-inline, .opinion-spacer {display:none!important}}
+</style>
+<meta content="#f5f4ef" name="theme-color"/><meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="mobile-web-app-capable"/><meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="실레나 노트" name="apple-mobile-web-app-title"/>
+<link href="app.webmanifest" rel="manifest"/><link href="app-icons/touch-180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="app-icons/arena-192.png" rel="icon" type="image/png"/><style>:root[data-rta-page] {
+  color-scheme:light;
+  --app-canvas:#f5f4ef; --app-paper:#fffef9; --app-ink:#122c26;
+  --app-green:#00684e; --app-lime:#d6f279; --app-line:#d5dbd2; --app-muted:#52665b;
+  --app-rail:184px; --app-bar:54px;
+  --app-font:"Inter",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --app-mono:"SFMono-Regular",Consolas,monospace;
+  background:var(--app-canvas); color:var(--app-ink); -webkit-text-size-adjust:100%;
+  scroll-padding-top:calc(var(--app-bar) + env(safe-area-inset-top,0px) + 12px);
+}
+html[data-rta-page] body {margin:0; min-width:0; background:var(--app-canvas); color:var(--app-ink); font-family:var(--app-font)}
+#rta-app-head, #rta-app-nav, #app-library, #opinion-dialog {box-sizing:border-box; font-family:var(--app-font); line-height:1.4; letter-spacing:normal}
+#rta-app-head *, #rta-app-nav *, #app-library *, #opinion-dialog * {box-sizing:border-box}
+#rta-app-head {position:sticky; z-index:16; top:0; display:flex; align-items:center; justify-content:space-between;
+  gap:6px; padding:env(safe-area-inset-top,0px) max(14px,env(safe-area-inset-right,0px)) 0 max(14px,env(safe-area-inset-left,0px));
+  min-height:calc(var(--app-bar) + env(safe-area-inset-top,0px)); background:var(--app-canvas); border-bottom:1px solid var(--app-line)}
+#rta-app-head a.rta-brand {display:inline-flex; align-items:center; gap:8px; min-height:44px; color:var(--app-ink); text-decoration:none; white-space:nowrap}
+.rta-brand b {font-size:18px; font-weight:820; letter-spacing:-.065em}
+.rta-brand img {width:32px;height:32px;border-radius:9px;flex:none}
+#rta-app-head .rta-actions {display:flex; align-items:center; gap:2px}
+#rta-app-head button, #rta-app-nav button, #app-library button {appearance:none; -webkit-appearance:none;
+  border:0; cursor:pointer; font:650 14px/1.25 var(--app-font); color:var(--app-ink); background:transparent; margin:0}
+#rta-app-head button {display:inline-flex; min-height:44px; min-width:44px; align-items:center; justify-content:center; gap:5px; border-radius:8px; padding:0 9px}
+#rta-app-head #opinion-mode[aria-pressed=true] {background:var(--app-lime);color:#183920}
+#rta-app-head .rta-actions #app-library-open {padding-right:3px}
+.rta-icon, #rta-app-head #opinion-mode::before, #rta-app-nav #opinion-list-open::before {content:""; display:inline-block; width:21px; height:21px; flex:0 0 auto; background:currentColor;
+  -webkit-mask:url(app-icons/interface.png) var(--app-icon-x,0%) center / 600% 100% no-repeat;
+  mask:url(app-icons/interface.png) var(--app-icon-x,0%) center / 600% 100% no-repeat}
+.icon-draft {--app-icon-x:20%}.icon-roster {--app-icon-x:40%}
+#rta-app-nav #opinion-list-open::before {--app-icon-x:60%}
+.icon-library {--app-icon-x:80%}#rta-app-head #opinion-mode::before {--app-icon-x:100%}
+#rta-app-head .rta-icon, #rta-app-head #opinion-mode::before {width:18px;height:18px}
+#rta-app-nav {position:fixed; z-index:15; top:auto; bottom:0; left:0; right:0; height:auto; width:auto; max-width:none; margin:0;
+  display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:2px; border-top:1px solid #d7dcd2; background:#fffef9;
+  padding:3px max(7px,env(safe-area-inset-right,0px)) calc(3px + env(safe-area-inset-bottom,0px)) max(7px,env(safe-area-inset-left,0px))}
+#rta-app-nav a, #rta-app-nav #opinion-list-open {position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  margin:0; width:100%; padding:3px 2px; min-width:0; min-height:51px; gap:3px; border:0; border-radius:9px;
+  color:#43574d; background:transparent; text-decoration:none; font:650 11px/1.2 var(--app-font); letter-spacing:-.025em}
+#rta-app-nav a[aria-current=page] {color:#005b43; background:#e7efdf}
+#rta-app-nav #opinion-list-open:not([data-count="0"])::after {content:attr(data-count); position:absolute; top:2px; left:calc(50% + 7px);
+  min-width:15px; padding:1px 3px; border-radius:9px; background:var(--app-ink); color:white; text-align:center; font:700 10px/13px var(--app-font)}
+#app-opinions-slot {display:flex; min-width:0}
+html.rta-shell-ready #opinion-dock,html.rta-shell-ready .opinion-spacer,
+html.rta-shell-ready #reader-bar,html.rta-shell-ready .current-roster-entry {display:none!important}
+html[data-rta-page] body {padding-bottom:calc(78px + env(safe-area-inset-bottom,0px))}
+html[data-rta-page] :where(button,a,input,textarea,select,summary):focus-visible {outline:3px solid #568108;outline-offset:2px}
+html[data-rta-page] :where(textarea,input[type=search],input[type=text],select) {font-size:max(16px,1em)}
+#app-library, html[data-rta-page] #opinion-dialog {box-sizing:border-box; position:fixed; z-index:30; inset:auto 0 var(--app-keyboard,0px); margin:0 auto;
+  width:100%; max-width:540px; max-height:min(88dvh,calc(var(--app-visual-height,100dvh) - 12px)); overflow:auto; overscroll-behavior:contain;
+  border:1px solid var(--app-line); border-bottom:0; border-radius:20px 20px 0 0; padding:18px 19px max(20px,env(safe-area-inset-bottom,0px));
+  background:var(--app-paper); color:var(--app-ink); text-align:left; box-shadow:0 -12px 50px #102c2026}
+#app-library:not([open]), html[data-rta-page] #opinion-dialog:not([open]) {display:none}
+#app-library::backdrop,html[data-rta-page] #opinion-dialog::backdrop {background:rgb(12 32 24 / 52%)}
+#app-library .rta-sheet-head,html[data-rta-page] #opinion-dialog .opinion-head {display:flex; align-items:center; justify-content:space-between; gap:14px; margin:0 0 10px}
+#app-library h2,html[data-rta-page] #opinion-dialog h2 {color:var(--app-ink);margin:0;font:800 23px/1.35 var(--app-font);letter-spacing:-.055em}
+#app-library .rta-close,html[data-rta-page] #opinion-dialog #opinion-close {min-width:44px; min-height:44px; border:0; background:transparent; color:var(--app-green); font-size:14px}
+.rta-library-links {display:grid}
+.rta-library-links a {display:flex;justify-content:space-between;align-items:center;min-height:60px;padding:10px 1px;color:var(--app-ink);border-top:1px solid var(--app-line);text-decoration:none}
+.rta-library-links strong,.rta-library-links small {display:block}
+.rta-library-links small {margin-top:3px;color:var(--app-muted);font-size:13px}
+.rta-chevron {width:9px;height:9px;border-right:2px solid #5e7366;border-top:2px solid #5e7366; transform:rotate(45deg); margin-right:6px}
+.rta-display {display:flex;gap:8px;border-top:1px solid var(--app-line);padding-top:12px;margin-top:3px}
+#app-library .rta-display button {min-height:44px;padding:0 14px;border:1px solid var(--app-line);border-radius:8px}
+#app-library .rta-display button[aria-pressed=true] {background:#e3efd9;color:var(--app-green)}
+html[data-rta-page] #opinion-dialog button:not(#opinion-close), html[data-rta-page] .opinion-inline {min-height:44px}
+html[data-rta-page] #opinion-dialog .opinion-actions {margin:12px 0 5px; gap:8px}
+html[data-rta-page] #opinion-dialog :is(#opinion-save,#opinion-copy) {background:var(--app-green);color:#fff;border:0;border-radius:10px;min-height:46px;padding:0 22px}
+html[data-rta-page] #opinion-dialog blockquote {background:#eff3e8;border-left:3px solid #86ab67;padding:10px 12px;line-height:1.55}
+html[data-rta-page] #opinion-dialog textarea {border-radius:10px;font-size:16px}
+html[data-rta-page] .opinion-writing .opinion-inline,html.opinion-writing[data-rta-page] .opinion-inline {background:#edf5cf;border-color:#bfcd99;min-width:44px;color:#17482d}
+@media(min-width:860px){
+  :root[data-rta-page]{--app-bar:59px}
+  html[data-rta-page] body {padding-inline-start:var(--app-rail);padding-bottom:22px}
+  #rta-app-head {margin-left:calc(0px - var(--app-rail));padding-inline:23px 28px}
+  #rta-app-nav {top:calc(var(--app-bar) + env(safe-area-inset-top,0px));bottom:0;right:auto;width:var(--app-rail);padding:22px 10px;display:flex;flex-direction:column;align-items:stretch;gap:4px;
+    background:var(--app-canvas);border:0;border-right:1px solid var(--app-line)}
+  #rta-app-nav a, #rta-app-nav #opinion-list-open {flex-direction:row;justify-content:flex-start;gap:11px;padding:10px 14px;font-size:15px;min-height:46px;letter-spacing:-.04em}
+  #rta-app-nav a[aria-current=page] {background:var(--app-ink);color:#eeffc7}
+  #rta-app-nav #opinion-list-open:not([data-count="0"])::after {position:static;margin-left:auto}
+  #app-opinions-slot {margin-top:9px;border-top:1px solid var(--app-line);padding-top:11px}
+}
+@media(min-width:700px) and (min-height:500px){
+  #app-library, html[data-rta-page] #opinion-dialog {inset:0;margin:auto;border:1px solid var(--app-line);border-radius:16px;padding:24px;max-height:min(85dvh,780px)}
+}
+@media(max-width:859px) and (orientation:landscape) and (max-height:499px){
+  #rta-app-head {position:relative}
+  #rta-app-nav a,#rta-app-nav #opinion-list-open {flex-direction:row;gap:6px;min-height:44px}
+}
+@media(max-width:859px){
+  html[data-rta-page] body {padding-inline:max(0px,env(safe-area-inset-left,0px)) max(0px,env(safe-area-inset-right,0px))}
+  #rta-app-head {margin-inline:calc(0px - env(safe-area-inset-left,0px)) calc(0px - env(safe-area-inset-right,0px))}
+}
+@media(prefers-reduced-motion:reduce){html[data-rta-page] {scroll-behavior:auto!important}}
+@media print {#rta-app-head,#rta-app-nav,#app-library,.app-opinion-tip {display:none!important}html[data-rta-page] body{padding:0}}
+.rta-archive-nav {display:none}
+@media(min-width:860px){
+  #rta-app-nav {overflow-y:auto}
+  #rta-app-nav .rta-archive-nav {display:block;margin-top:20px;padding:18px 2px;border-top:1px solid var(--app-line)}
+  .rta-archive-nav b {display:block;padding:0 12px 8px;color:#627267;font:650 12px/1.4 var(--app-font)}
+  #rta-app-nav .rta-archive-nav a {padding:9px 12px;min-height:42px;font-size:14px;color:#4a5d51;font-weight:550}
+  #rta-app-nav .rta-archive-nav a[aria-current] {background:#e4eadf;color:var(--app-green);font-weight:750}
+  html[data-rta-page] #opinion-dialog:has(#opinion-editor:not([hidden])) {width:min(840px,80vw);max-width:none}
+  #opinion-dialog #opinion-editor:not([hidden]) {display:grid;grid-template-columns:1fr 1.1fr;grid-template-rows:auto 1fr auto;column-gap:28px}
+  #opinion-editor #opinion-context {grid-column:1;grid-row:1}
+  #opinion-editor #opinion-quote {grid-column:1;grid-row:2;align-self:start}
+  #opinion-editor label {grid-column:2;grid-row:1;align-self:end}
+  #opinion-editor textarea {grid-column:2;grid-row:2;min-height:140px}
+  #opinion-editor .opinion-actions {grid-column:2;grid-row:3}
+  html[data-rta-page] #opinion-dialog:has(#opinion-list:not([hidden])) {width:min(920px,83vw);max-width:none}
+  #opinion-dialog .opinion-entry {display:grid;grid-template-columns:1.1fr 1fr;gap:6px 25px;align-items:start}
+  #opinion-dialog .opinion-entry strong {grid-column:1/-1}
+  #opinion-dialog .opinion-entry blockquote {grid-column:1;grid-row:2/4;margin:0}
+  #opinion-dialog .opinion-entry p {grid-column:2;grid-row:2}
+  #opinion-dialog .opinion-entry button {grid-column:2;justify-self:start}
+  #app-library {max-width:640px}
+  .rta-library-links {grid-template-columns:1fr 1fr;column-gap:26px}
+  @media(hover:hover){#rta-app-nav a:not([aria-current]):hover,#rta-app-nav #opinion-list-open:hover,#rta-app-head button:hover {background:#e8ece2}}
+}
+html.rta-shell-ready .app-opinion-tip {margin:0;padding:8px max(16px,env(safe-area-inset-left,0px));border:0;border-radius:0;font:600 13px/1.4 var(--app-font);color:#345630;background:#edf5cf}
+html.rta-shell-ready .app-opinion-tip[hidden] {display:none}
+#opinion-dialog .opinion-entry-actions {display:flex;gap:12px;align-items:center}
+#opinion-dialog .opinion-entry-actions a {display:inline-flex;align-items:center;min-height:44px;color:var(--app-green);font-size:14px}
+#opinion-dialog .opinion-empty button {display:block;margin:10px 0 0}
+@media(min-width:860px){#opinion-dialog .opinion-entry-actions {grid-column:2;grid-row:3}}
+</style><style>/* Shared reference panels. Existing game portraits supply the element colors. */
+html:is([data-rta-page="first-picks"],[data-rta-page="roster"]) main {
+  --cp-ink:#122c26; --cp-muted:#4b6056; --cp-green:#00684e; --cp-lime:#d6f279; --cp-card:#fffef9; --cp-stroke:#d7dbd1;
+  max-width:1260px; width:100%; margin-inline:auto; padding:clamp(18px,3vw,48px) clamp(14px,3.25vw,48px) 40px;
+  color:var(--cp-ink); box-sizing:border-box;
+}
+.cp-heading {position:relative; padding:0 0 17px; margin:0 0 19px; background:none; color:var(--cp-ink); border:0; border-bottom:1px solid var(--cp-stroke); border-radius:0}
+.cp-heading nav {display:none}
+.cp-heading .date,.cp-heading>small {display:block; margin:0; font-size:.76rem; font-weight:660; color:var(--cp-muted)}
+.cp-heading h1 {font-size:clamp(1.8rem,3.4vw,3.05rem); margin:.14em 0 0; line-height:1.14; letter-spacing:-.065em; color:var(--cp-ink)}
+[data-rta-page="roster"] #cp-units [hidden], [data-rta-page="roster"] #cp-guide[hidden], [data-rta-page="roster"] #cp-units[hidden] {display:none!important}
+.cp-empty,.cp-search-status {color:var(--cp-muted); padding:.65em .15em; font-size:.88rem}
+.cp-search {min-width:0; display:flex; align-items:center; gap:9px; height:44px; border:1px solid #aab7ab; border-radius:8px; background:var(--cp-card); padding-inline:12px}
+.cp-search:focus-within {outline:2px solid var(--cp-green); outline-offset:1px}
+.cp-search input {appearance:none; -webkit-appearance:none; width:100%; min-width:0; height:100%; background:transparent; border:0; outline:0; color:var(--cp-ink); font:inherit; font-size:16px}
+.cp-search input::placeholder {color:#566b60}
+.cp-lens {display:inline-block; flex:none; position:relative; width:14px; height:14px; border:1.7px solid var(--cp-green); border-radius:50%}
+.cp-lens:after {content:""; position:absolute; width:7px; height:1.7px; right:-5px; bottom:-1px; background:var(--cp-green); transform:rotate(45deg)}
+.cp-search input:focus-visible {outline:none}
+[data-rta-page] .cp-finder .mobile-select {position:relative; overflow:hidden; display:flex; gap:6px; align-items:center; justify-content:center; margin:0; padding:0 11px; white-space:nowrap; border-radius:8px; background:#e6eadf; border:1px solid #cbd3c7; font-size:.8rem; font-weight:680; color:var(--cp-ink)}
+.cp-finder .mobile-select:after,.cp-find-again:after {content:""; display:inline-block; width:5px; height:5px; border:solid currentColor; border-width:0 1.5px 1.5px 0; transform:rotate(45deg); margin-top:-3px}
+.cp-finder .mobile-select:focus-within {outline:2px solid var(--cp-green)}
+[data-rta-page] .cp-finder .mobile-select select {position:absolute; inset:0; margin:0; padding:0; height:100%; width:100%; min-width:0; max-width:100%; cursor:pointer; font-size:16px; opacity:0; display:block}
+[data-rta-page="first-picks"] .layout {display:grid; grid-template-columns:minmax(220px,28%) minmax(0,1fr); align-items:start; gap:clamp(18px,3vw,38px); margin:0}
+.cp-finder {min-width:0}
+.cp-finder h2 {margin:0 0 10px; font-size:1rem; letter-spacing:-.045em}
+.cp-finder-controls {display:flex; gap:5px; margin:0 0 12px}
+.cp-finder-controls .cp-search {flex:1}
+[data-rta-page="first-picks"] .cp-finder .ranks {display:grid; grid-template-columns:1fr; column-count:auto; padding:0; margin:0; list-style:none}
+.cp-finder .ranks li {min-width:0; padding:0; margin:0}
+[data-rta-page="first-picks"] .ranks a {position:relative; padding:6px 8px; border-radius:6px; min-height:44px; gap:8px; color:var(--cp-ink)}
+[data-rta-page="first-picks"] .ranks a[aria-current] {background:#e0ecc6; color:#123d2b}
+[data-rta-page="first-picks"] .ranks .rank-num {font-size:.7rem; font-weight:750; font-variant-numeric:tabular-nums; color:#486452; width:1.25rem; flex:none}
+[data-rta-page="first-picks"] .ranks .rate {white-space:nowrap; flex:none}
+[data-rta-page="first-picks"] .ranks .face {width:2rem; height:2rem; border-radius:7px}
+[data-rta-page="first-picks"] .matchup {border:1px solid var(--cp-stroke); border-radius:15px; overflow:hidden; background:var(--cp-card)}
+[data-rta-page="first-picks"] .match-head {position:relative; background:var(--cp-ink); color:#fff; border-radius:0; gap:13px; padding:clamp(16px,2vw,24px)}
+[data-rta-page="first-picks"] .match-head .face {width:clamp(3.5rem,5vw,4.45rem); height:clamp(3.5rem,5vw,4.45rem); border-radius:10px; border:1px solid #879b7b}
+[data-rta-page="first-picks"] .match-head small {color:var(--cp-lime); font-size:.76rem}
+[data-rta-page="first-picks"] .match-head h2 {font-size:clamp(1.45rem,2.25vw,2rem); letter-spacing:-.055em; color:white; margin:.05em 0; line-height:1.23}
+[data-rta-page="first-picks"] .match-head p {font-size:.75rem; color:#cad5ca}
+.cp-find-again {margin-left:auto; align-self:start; flex:none; display:inline-flex; align-items:center; gap:6px; padding:.45rem .5rem; min-height:40px; background:transparent; border:0; color:#e1eae1; font:650 .77rem/1.3 inherit; cursor:pointer}
+[data-rta-page="first-picks"] .pick {background:#edf2df; padding-block:clamp(14px,2vw,22px)}
+[data-rta-page="first-picks"] .pick h3 {color:#225746; font-weight:730; font-size:.83rem}
+[data-rta-page="first-picks"] .picks {gap:8px; margin:.55rem 0 .75rem; align-items:stretch}
+[data-rta-page="first-picks"] .picks .unit {background:var(--cp-card); padding:.29rem .7rem .29rem .29rem; border:1px solid #c9d4b8; border-radius:9px; gap:7px; font-size:1.04rem; line-height:1.22; letter-spacing:-.045em}
+[data-rta-page="first-picks"] .picks .face {width:2.45rem; height:2.45rem; border-radius:6px}
+[data-rta-page="first-picks"] .picks>span[aria-hidden] {align-self:center; font-size:.92rem; color:#446348}
+[data-rta-page="first-picks"] .pick>p:not(.status),[data-rta-page="first-picks"] .call p {font-size:1rem; line-height:1.67; letter-spacing:-.017em}
+[data-rta-page="first-picks"] .pick .status {color:#4c6354; font-size:.81rem; line-height:1.55; margin-top:.5rem}
+[data-rta-page="first-picks"] .cp-jumps {display:flex; gap:0; flex-wrap:wrap; align-items:stretch; padding:0!important; background:#f1f2e9}
+.cp-jumps button {min-height:44px; color:var(--cp-green); font-size:.81rem; font-weight:700; flex:1; min-width:max-content; padding:6px 9px; cursor:pointer; background:transparent; border:0}
+.cp-jumps button+button {border-left:1px solid var(--cp-stroke)}
+.cp-jumps button:focus-visible,.cp-find-again:focus-visible,.cp-segments button:focus-visible,.cp-view-tabs button:focus-visible {outline:2px solid #a36700; outline-offset:-2px}
+[data-rta-page="first-picks"] .matchup .call,[data-rta-page="first-picks"] .routes,[data-rta-page="first-picks"] .cp-frequency,.cp-search {scroll-margin-top:85px}
+[data-rta-page="first-picks"] .matchup h3 {letter-spacing:-.035em}
+[data-rta-page="first-picks"] .routes {background:#f7f7ef}
+[data-rta-page="first-picks"] .route {background:var(--cp-card); border-color:#c5cfc3}
+[data-rta-page="first-picks"] .route>summary {min-height:44px; font-size:.93rem; padding:.7rem .75rem; color:var(--cp-green)}
+[data-rta-page="first-picks"] .route[data-plan=primary]>summary {background:#e2eacb}
+[data-rta-page="first-picks"] .route-steps li>b {color:#39634e}
+[data-rta-page="first-picks"] .frequency .fill {background:var(--cp-green)}
+.cp-field-notes {display:flex; align-items:start; flex-wrap:wrap; gap:12px; margin-bottom:14px}
+.cp-field-notes .limits,.cp-field-notes .changes {margin:0; padding:10px 14px; border:1px solid var(--cp-stroke); border-radius:8px; font-size:.86rem; background:var(--cp-card)}
+.cp-field-notes .limits {background:#fbf0d7}
+.cp-roster-heading {padding-right:90px}
+.cp-total {display:inline-block; vertical-align:middle; margin-left:.4em; padding:.2em .5em; background:var(--cp-lime); border-radius:2em; font-size:clamp(.9rem,1.2vw,1.1rem); letter-spacing:0; line-height:1; font-weight:750}
+.cp-stack {position:absolute; right:3px; top:50%; margin-top:-21px; display:flex}
+.cp-stack img {width:40px; height:40px; border-radius:10px; border:2px solid #f5f4ef}
+.cp-stack img+img {margin-left:-11px}
+.cp-view-tabs {display:flex; width:max-content; max-width:100%; gap:3px; padding:3px; background:#e5e8dd; border-radius:10px; margin-bottom:16px}
+.cp-view-tabs button,.cp-segments button {font:inherit; font-size:.87rem; font-weight:640; color:var(--cp-muted); cursor:pointer; border:0; border-radius:7px; background:transparent; padding:.45em 1em; min-height:40px}
+.cp-view-tabs button[aria-pressed=true] {color:var(--cp-card); background:var(--cp-ink)}
+.cp-filters {display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.cp-filters .cp-search {flex:1; min-width:min(240px,100%)}
+.cp-segments {display:flex; gap:4px; min-width:0; overflow-x:auto; scrollbar-width:thin; white-space:nowrap; padding:1px}
+.cp-segments button {font-size:.82rem; padding:.45rem .65rem; min-height:42px; border:1px solid var(--cp-stroke); color:var(--cp-muted); background:var(--cp-card)}
+.cp-segments button[aria-pressed=true] {color:var(--cp-green); background:#e3edcc; border-color:#a8be90}
+[data-rta-page="roster"] .cp-unit-group {margin-top:22px; scroll-margin-top:85px}
+[data-rta-page="roster"] .cp-unit-group h2 {margin:0; color:var(--cp-ink); font-size:clamp(1.22rem,1.8vw,1.55rem); letter-spacing:-.05em}
+[data-rta-page="roster"] .cp-unit-group>p {font-size:.89rem; color:var(--cp-muted); margin:.25rem 0 .8rem}
+[data-rta-page="roster"] .grid {grid-template-columns:repeat(auto-fill,minmax(min(225px,100%),1fr)); gap:9px; align-items:start}
+[data-rta-page="roster"] .card {display:grid; grid-template-columns:52px minmax(0,1fr); gap:3px 12px; border-radius:12px; padding:12px; align-items:center; border:1px solid var(--cp-stroke); background:var(--cp-card)}
+[data-rta-page="roster"] .card img {width:52px; height:52px; border-radius:9px}
+[data-rta-page="roster"] .card h3 {font-size:1.12rem; letter-spacing:-.045em; color:var(--cp-ink); margin:0}
+[data-rta-page="roster"] .card small {display:block; margin-top:3px; color:#42684f; font-size:.78rem; font-weight:650}
+[data-rta-page="roster"] .card footer {grid-column:1/-1; margin:6px 0 0; color:var(--cp-muted); font-size:.78rem; font-variant-numeric:tabular-nums}
+.cp-unit-details {grid-column:1/-1; border-top:1px solid var(--cp-stroke); margin-top:5px}
+.cp-unit-details summary {display:flex; justify-content:space-between; align-items:center; min-height:42px; padding:4px 0; font-size:.86rem; font-weight:660; color:var(--cp-green); cursor:pointer}
+.cp-unit-details summary::-webkit-details-marker {display:none}
+.cp-unit-details summary:after {content:"＋"; font-size:1.12rem}
+.cp-unit-details[open] summary:after {content:"−"}
+.cp-unit-details p {margin:0 0 .5rem; font-size:.95rem; line-height:1.63}
+#cp-guide {max-width:950px}
+#cp-guide nav {display:flex; flex-wrap:wrap; gap:5px; margin:.85rem 0 1rem; font-size:0}
+#cp-guide nav a {font-size:.86rem; display:inline-flex; align-items:center; padding:6px 12px; min-height:42px; text-decoration:none; border:1px solid var(--cp-stroke); border-radius:7px; background:var(--cp-card)}
+#cp-guide .focus,#cp-guide .cp-guide-intro {border:1px solid var(--cp-stroke); padding:clamp(15px,2vw,22px); background:var(--cp-card); border-radius:12px}
+#cp-guide .cp-guide-intro {color:white; background:var(--cp-ink)}
+#cp-guide .cp-guide-intro h2,#cp-guide .focus h2 {margin:0 0 .4rem; font-size:1.3rem}
+#cp-guide h2 {letter-spacing:-.045em}
+#cp-guide section {scroll-margin-top:85px}
+@media (max-width:760px) {
+  html:is([data-rta-page="first-picks"],[data-rta-page="roster"]) main {padding:16px 13px 24px}
+  .cp-heading {margin-bottom:13px; padding-bottom:13px}
+  .cp-heading h1 {font-size:1.85rem}
+  [data-rta-page="first-picks"] .layout {display:block}
+  [data-rta-page="first-picks"] .cp-finder>h2 {display:none}
+  .cp-finder-controls {margin-bottom:7px}
+  [data-rta-page="first-picks"] .cp-finder .ranks {display:flex; align-items:stretch; gap:3px; margin:0 0 11px; overflow-x:auto; overscroll-behavior-x:contain; scrollbar-width:thin}
+  [data-rta-page="first-picks"] .cp-finder .ranks li[hidden] {display:none!important}
+  [data-rta-page="first-picks"] .cp-finder .ranks li {flex:0 0 66px}
+  [data-rta-page="first-picks"] .cp-finder .ranks a {display:flex; flex-direction:column; justify-content:flex-start; align-items:center; gap:3px; padding:7px 2px 5px; min-height:72px; border-radius:8px}
+  [data-rta-page="first-picks"] .ranks .rank-num {position:absolute; top:2px; left:5px; width:auto; min-width:16px; padding:0 2px; line-height:1.25; border-radius:4px; text-align:center; background:#f5f4ef; color:var(--cp-ink); font-size:.63rem}
+  [data-rta-page="first-picks"] .ranks a[aria-current] .rank-num {background:var(--cp-lime)}
+  [data-rta-page="first-picks"] .cp-finder .ranks .face {width:35px; height:35px; border-radius:7px}
+  [data-rta-page="first-picks"] .cp-finder .ranks b {font-size:.72rem; line-height:1.16; letter-spacing:-.04em; text-align:center; overflow-wrap:anywhere}
+  [data-rta-page="first-picks"] .cp-finder .ranks .rate {display:none}
+  [data-rta-page="first-picks"] .match-head {padding:14px}
+  [data-rta-page="first-picks"] .matchup>div,[data-rta-page="first-picks"] .matchup>details {padding:14px}
+  .cp-stack img {width:34px; height:34px; border-radius:8px}
+  .cp-stack {margin-top:-18px}
+  .cp-filters {display:grid; gap:7px}
+  .cp-view-tabs {margin-bottom:10px}
+  [data-rta-page="roster"] .cp-unit-group {margin-top:16px}
+  [data-rta-page="roster"] .card {padding:10px 12px 2px}
+}
+@media (max-width:365px) {
+  .cp-find-again {align-self:center; font-size:.7rem; padding:4px}
+  [data-rta-page="first-picks"] .picks .unit {font-size:.91rem}
+  [data-rta-page="first-picks"] .picks .face {width:2rem; height:2rem}
+}
+@media print {
+  .cp-search,.cp-filters,.cp-finder-controls,.cp-view-tabs,.cp-find-again,.cp-jumps {display:none!important}
+}
+/* The same evidence moves into a second reading pane on a wide screen. */
+.cp-intel {min-width:0; border-top:1px solid var(--cp-stroke); color:var(--cp-ink)}
+.cp-intel>div,.cp-intel>details {padding:1rem clamp(1rem,2.3vw,1.45rem)}
+.cp-intel>div+div,.cp-intel>details {border-top:1px solid var(--cp-stroke)}
+.cp-guide-title {display:none}
+@media (min-width:1200px) {
+  html:is([data-rta-page="first-picks"],[data-rta-page="roster"]) main {max-width:1640px; padding-inline:clamp(20px,2.25vw,40px)}
+  [data-rta-page="first-picks"] .layout {grid-template-columns:clamp(205px,15vw,260px) minmax(0,1fr); gap:clamp(16px,1.7vw,32px)}
+  .cp-finder {position:sticky; top:78px; max-height:calc(100dvh - 94px); overflow:auto; scrollbar-width:thin; scrollbar-color:#aab9ac transparent}
+  [data-rta-page="first-picks"] .cp-finder .mobile-select {display:none}
+  [data-rta-page="first-picks"] .matchup {display:grid; grid-template-columns:minmax(0,1.22fr) minmax(252px,.85fr); grid-template-areas:"head head" "pick stats" "jump stats" "call stats" "routes stats"; overflow:clip}
+  [data-rta-page="first-picks"] .matchup[hidden] {display:none!important}
+  .matchup>.match-head {grid-area:head}
+  .matchup>.pick {grid-area:pick}
+  .matchup>.cp-jumps {grid-area:jump}
+  .matchup>.call {grid-area:call}
+  .matchup>.routes {grid-area:routes}
+  .matchup>.cp-intel {grid-area:stats; position:sticky; top:78px; align-self:start; height:max-content; border:0; border-left:1px solid var(--cp-stroke); background:#fafbf4}
+  .cp-intel>div,.cp-intel>details {padding:clamp(14px,1.45vw,23px)}
+  [data-rta-page="first-picks"] .cp-intel .frequency li {grid-template-columns:minmax(0,1fr) auto; gap:3px 5px; align-items:center; margin:.75rem 0}
+  .cp-intel .frequency .track {grid-column:1/-1; grid-row:2; height:4px}
+  .cp-intel .frequency .value {grid-column:2; grid-row:1}
+  [data-rta-page="first-picks"] .cp-intel .frequency .unit {min-width:0}
+  .cp-roster-workspace {display:grid; grid-template-columns:minmax(0,1.6fr) minmax(280px,.85fr); align-items:start; gap:clamp(18px,2vw,38px)}
+  .cp-view-tabs {display:none}
+  .cp-roster-workspace #cp-guide {position:sticky; top:78px; max-height:calc(100dvh - 94px); overflow:auto; scrollbar-width:thin; scrollbar-color:#b1bdac transparent; border-left:1px solid var(--cp-stroke); padding:0 4px 1rem clamp(14px,1.6vw,24px)}
+  #cp-guide>.cp-guide-title {display:block; margin:0 0 8px; font-size:1.15rem}
+  #cp-guide nav {margin:0 0 12px}
+  #cp-guide nav a {font-size:.75rem; min-height:34px; padding:3px 8px}
+  #cp-guide .cp-guide-intro {padding:16px}
+  #cp-guide .cp-guide-intro h2 {font-size:1.18rem}
+  #cp-guide .cp-guide-intro p,#cp-guide .focus p {font-size:.91rem}
+  .cp-roster-workspace .cp-filters {display:grid; gap:8px}
+  [data-rta-page="roster"] .cp-roster-workspace .grid {grid-template-columns:repeat(auto-fill,minmax(min(210px,100%),1fr))}
+}
 </style></head>
-<body><main><header><nav aria-label="리포트"><a href="index.html#loss-feedback">‹ 내 경기 복기</a><a href="roster.html">내 몬스터 목록</a></nav>
+<body><div id="rta-app-head">
+<a aria-label="실레나 노트 경기 복기" class="rta-brand" href="index.html#loss-feedback"><img alt="" height="32" src="app-icons/arena-192.png" width="32"/><b>실레나 노트</b></a>
+<div class="rta-actions"><span id="app-mode-slot"></span><button aria-controls="app-library" aria-haspopup="dialog" id="app-library-open" type="button"><i aria-hidden="true" class="rta-icon icon-library"></i><span>자료실</span></button></div>
+</div><nav aria-label="앱 메뉴" id="rta-app-nav"><a data-app-view="main" href="index.html#loss-feedback"><i aria-hidden="true" class="rta-icon icon-review"></i><span>경기 복기</span></a><a aria-current="page" data-app-view="first-picks" href="first-picks.html"><i aria-hidden="true" class="rta-icon icon-draft"></i><span>선픽 대응</span></a><a data-app-view="roster" href="roster.html"><i aria-hidden="true" class="rta-icon icon-roster"></i><span>내 몬스터</span></a><span id="app-opinions-slot"></span>
+<div class="rta-archive-nav"><b>전략 자료</b><a data-archive-topic="top" href="index.html#top">전략 홈</a><a data-archive-topic="counter-index" href="index.html#counter-index">상대 카운터</a><a data-archive-topic="rune-floors" href="index.html#rune-floors">룬·공속</a><a data-archive-topic="account-fit" href="index.html#account-fit">내 기록</a><a data-archive-topic="pool" href="index.html#pool">이전 몬스터 자료</a></div></nav><dialog aria-labelledby="app-library-title" id="app-library">
+<div class="rta-sheet-head"><h2 id="app-library-title">전략 자료실</h2><button aria-label="자료실 닫기" class="rta-close" type="button">닫기</button></div>
+<div class="rta-library-links"><a href="index.html#top"><span><strong>전략 홈</strong><small>선픽과 후픽, 다음 딜러</small></span><i aria-hidden="true" class="rta-chevron"></i></a><a href="index.html#counter-index"><span><strong>상대 카운터</strong><small>상대 조합별 픽과 밴</small></span><i aria-hidden="true" class="rta-chevron"></i></a><a href="index.html#rune-floors"><span><strong>룬·공속</strong><small>준비표와 속도 계산기</small></span><i aria-hidden="true" class="rta-chevron"></i></a><a href="index.html#account-fit"><span><strong>내 기록</strong><small>전적과 밴 통계</small></span><i aria-hidden="true" class="rta-chevron"></i></a><a href="index.html#pool"><span><strong>이전 몬스터 자료</strong><small>24마리의 역할과 투자 기록</small></span><i aria-hidden="true" class="rta-chevron"></i></a></div>
+</dialog><main><header class="cp-heading"><nav aria-label="리포트"><a href="index.html#loss-feedback">‹ 내 경기 복기</a><a href="roster.html">내 몬스터 목록</a></nav>
 <p class="date">월드 아레나 · 시즌 39 · 2026년 11월 27일</p><h1>상대 선픽 대응표</h1>
-<p>상대 선픽에 내밀 두 장을 고르고, 첫 딜러가 밴돼도 누구를 칠지 확인하세요. 각 선픽에 두 가지 가상 밴픽과 실제 후속 픽 빈도를 담았습니다.</p></header>
-<div class="layout"><aside><h2>선픽 TOP 15</h2><ol class="ranks"><li><a href="#pick-13812"><span class="rank-num">01</span><span aria-hidden="true" class="face p13812"></span><b>불발키리</b><span class="rate">11.6%</span></a></li><li><a href="#pick-15713"><span class="rank-num">02</span><span aria-hidden="true" class="face p15713"></span><b>풍오라클</b><span class="rate">7.9%</span></a></li><li><a href="#pick-25313"><span class="rank-num">03</span><span aria-hidden="true" class="face p25313"></span><b>풍스카이서퍼</b><span class="rate">6.8%</span></a></li><li><a href="#pick-16813"><span class="rank-num">04</span><span aria-hidden="true" class="face p16813"></span><b>풍오공</b><span class="rate">4.8%</span></a></li><li><a href="#pick-18611"><span class="rank-num">05</span><span aria-hidden="true" class="face p18611"></span><b>물선인</b><span class="rate">4.6%</span></a></li><li><a href="#pick-23711"><span class="rank-num">06</span><span aria-hidden="true" class="face p23711"></span><b>물화백</b><span class="rate">4.5%</span></a></li><li><a href="#pick-35913"><span class="rank-num">07</span><span aria-hidden="true" class="face p35913"></span><b>풍슈타르크</b><span class="rate">3.5%</span></a></li><li><a href="#pick-21415"><span class="rank-num">08</span><span aria-hidden="true" class="face p21415"></span><b>암하프술사</b><span class="rate">3.0%</span></a></li><li><a href="#pick-30713"><span class="rank-num">09</span><span aria-hidden="true" class="face p30713"></span><b>풍드라칸 전사</b><span class="rate">2.9%</span></a></li><li><a href="#pick-17411"><span class="rank-num">10</span><span aria-hidden="true" class="face p17411"></span><b>물신수승</b><span class="rate">2.6%</span></a></li><li><a href="#pick-16811"><span class="rank-num">11</span><span aria-hidden="true" class="face p16811"></span><b>물오공</b><span class="rate">2.6%</span></a></li><li><a href="#pick-35915"><span class="rank-num">12</span><span aria-hidden="true" class="face p35915"></span><b>암슈타르크</b><span class="rate">2.3%</span></a></li><li><a href="#pick-26313"><span class="rank-num">13</span><span aria-hidden="true" class="face p26313"></span><b>풍퓨어바닐라 쿠키</b><span class="rate">2.3%</span></a></li><li><a href="#pick-30512"><span class="rank-num">14</span><span aria-hidden="true" class="face p30512"></span><b>불후시구로 메구미</b><span class="rate">2.2%</span></a></li><li><a href="#pick-31315"><span class="rank-num">15</span><span aria-hidden="true" class="face p31315"></span><b>암사령 공주</b><span class="rate">1.8%</span></a></li></ol>
-<label class="mobile-select">상대 1픽 <select id="opener-select"><option value="pick-13812">1위　불발키리　11.6%</option><option value="pick-15713">2위　풍오라클　7.9%</option><option value="pick-25313">3위　풍스카이서퍼　6.8%</option><option value="pick-16813">4위　풍오공　4.8%</option><option value="pick-18611">5위　물선인　4.6%</option><option value="pick-23711">6위　물화백　4.5%</option><option value="pick-35913">7위　풍슈타르크　3.5%</option><option value="pick-21415">8위　암하프술사　3.0%</option><option value="pick-30713">9위　풍드라칸 전사　2.9%</option><option value="pick-17411">10위　물신수승　2.6%</option><option value="pick-16811">11위　물오공　2.6%</option><option value="pick-35915">12위　암슈타르크　2.3%</option><option value="pick-26313">13위　풍퓨어바닐라 쿠키　2.3%</option><option value="pick-30512">14위　불후시구로 메구미　2.2%</option><option value="pick-31315">15위　암사령 공주　1.8%</option></select></label>
-<details class="changes"><summary>기본 두 장을 바꾼 선픽 7개</summary><p><a href="#pick-15713">풍오라클</a> · <a href="#pick-25313">풍스카이서퍼</a> · <a href="#pick-35913">풍슈타르크</a> · <a href="#pick-30713">풍드라칸 전사</a> · <a href="#pick-17411">물신수승</a> · <a href="#pick-35915">암슈타르크</a> · <a href="#pick-30512">불후시구로 메구미</a></p></details>
-<div class="limits"><b>준비 목록만으론 까다로운 선픽</b><p><a href="#pick-25313">풍스카이서퍼</a> · <a href="#pick-21415">암하프술사</a></p></div></aside>
+</header>
+<div class="layout"><aside class="cp-finder"><h2>선픽 순위</h2><div class="cp-finder-controls"><label class="cp-search"><span aria-hidden="true" class="cp-lens"></span><input aria-label="상대 선픽 이름 검색" autocomplete="off" enterkeyhint="search" id="cp-opener-search" placeholder="상대 선픽 이름 검색" type="search"/></label><label class="mobile-select">전체 순위<select id="opener-select"><option value="pick-13812">1위　불발키리　11.6%</option><option value="pick-15713">2위　풍오라클　7.9%</option><option value="pick-25313">3위　풍스카이서퍼　6.8%</option><option value="pick-16813">4위　풍오공　4.8%</option><option value="pick-18611">5위　물선인　4.6%</option><option value="pick-23711">6위　물화백　4.5%</option><option value="pick-35913">7위　풍슈타르크　3.5%</option><option value="pick-21415">8위　암하프술사　3.0%</option><option value="pick-30713">9위　풍드라칸 전사　2.9%</option><option value="pick-17411">10위　물신수승　2.6%</option><option value="pick-16811">11위　물오공　2.6%</option><option value="pick-35915">12위　암슈타르크　2.3%</option><option value="pick-26313">13위　풍퓨어바닐라 쿠키　2.3%</option><option value="pick-30512">14위　불후시구로 메구미　2.2%</option><option value="pick-31315">15위　암사령 공주　1.8%</option></select></label></div><ol class="ranks"><li><a href="#pick-13812"><span class="rank-num">01</span><span aria-hidden="true" class="face p13812"></span><b>불발키리</b><span class="rate">11.6%</span></a></li><li><a href="#pick-15713"><span class="rank-num">02</span><span aria-hidden="true" class="face p15713"></span><b>풍오라클</b><span class="rate">7.9%</span></a></li><li><a href="#pick-25313"><span class="rank-num">03</span><span aria-hidden="true" class="face p25313"></span><b>풍스카이서퍼</b><span class="rate">6.8%</span></a></li><li><a href="#pick-16813"><span class="rank-num">04</span><span aria-hidden="true" class="face p16813"></span><b>풍오공</b><span class="rate">4.8%</span></a></li><li><a href="#pick-18611"><span class="rank-num">05</span><span aria-hidden="true" class="face p18611"></span><b>물선인</b><span class="rate">4.6%</span></a></li><li><a href="#pick-23711"><span class="rank-num">06</span><span aria-hidden="true" class="face p23711"></span><b>물화백</b><span class="rate">4.5%</span></a></li><li><a href="#pick-35913"><span class="rank-num">07</span><span aria-hidden="true" class="face p35913"></span><b>풍슈타르크</b><span class="rate">3.5%</span></a></li><li><a href="#pick-21415"><span class="rank-num">08</span><span aria-hidden="true" class="face p21415"></span><b>암하프술사</b><span class="rate">3.0%</span></a></li><li><a href="#pick-30713"><span class="rank-num">09</span><span aria-hidden="true" class="face p30713"></span><b>풍드라칸 전사</b><span class="rate">2.9%</span></a></li><li><a href="#pick-17411"><span class="rank-num">10</span><span aria-hidden="true" class="face p17411"></span><b>물신수승</b><span class="rate">2.6%</span></a></li><li><a href="#pick-16811"><span class="rank-num">11</span><span aria-hidden="true" class="face p16811"></span><b>물오공</b><span class="rate">2.6%</span></a></li><li><a href="#pick-35915"><span class="rank-num">12</span><span aria-hidden="true" class="face p35915"></span><b>암슈타르크</b><span class="rate">2.3%</span></a></li><li><a href="#pick-26313"><span class="rank-num">13</span><span aria-hidden="true" class="face p26313"></span><b>풍퓨어바닐라 쿠키</b><span class="rate">2.3%</span></a></li><li><a href="#pick-30512"><span class="rank-num">14</span><span aria-hidden="true" class="face p30512"></span><b>불후시구로 메구미</b><span class="rate">2.2%</span></a></li><li><a href="#pick-31315"><span class="rank-num">15</span><span aria-hidden="true" class="face p31315"></span><b>암사령 공주</b><span class="rate">1.8%</span></a></li></ol><p class="cp-empty" hidden="" role="status">일치하는 선픽이 없어요.</p>
+</aside>
 <section aria-label="선픽별 대응"><article aria-labelledby="title-13812" class="matchup" id="pick-13812">
 <div class="match-head"><span aria-hidden="true" class="face p13812"></span><div><small>상대 1픽 · 1위</small><h2 id="title-13812">불발키리</h2>
-<p>시즌 선픽 484,650회 · 11.6%</p></div></div>
+<p>시즌 선픽 484,650회 · 11.6%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-21654bdc7833b0ba"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span></div>
-<p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-3621d673c2ce8c93">풍오공·물선인으로 열되, 6·7픽에는 보호를 더하기 전에 저격수를 때릴 딜러를 잡자. 물선인이 먼저 깔아 둔 면역·실드는 불발키리 방깎 뒤의 공격을 받아낼 여지를 준다. 불발키리 2스가 강화 하나를 지우므로 둘 다 남는다고 계산하지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물선인 11/27 5회 선택 <span data-checkable="18611"></span></p></div>
+<p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-3621d673c2ce8c93">풍오공·물선인으로 열되, 6·7픽에는 보호를 더하기 전에 저격수를 때릴 딜러를 잡자. 물선인이 먼저 깔아 둔 면역·실드는 불발키리 방깎 뒤의 공격을 받아낼 여지를 준다. 불발키리 2스가 강화 하나를 지우므로 둘 다 남는다고 계산하지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물선인 11/27 5회 선택 <span data-checkable="18611"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-be04cd7742477bac">풍배틀엔젤·물쿠키면 풍드나와 불레골라스, 암사령 공주면 불이프를 붙인다. 물오공·풍오공으로 공격적으로 열었는데 물팔라딘이 나오면 광역 기절을 아낀다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-1cca506ddf112fa6">같은 풍배틀엔젤·물쿠키라면 풍오공·물선인은 먼저 걸어 둔 실드로 저격 피해를 줄인다. 풍오공·물오공은 물쿠키의 공업 전에 기절시킬 수 있지만 그 선턴을 놓치면 첫 네 장에 실드를 따로 채워야 한다.</p><p class="switch" data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 선택을 바꿀 때" data-opinion-key="first-picks-f1f51dfe5f766ba4"><b>선택을 바꿀 때</b>　물오공이 적 저격수보다 앞선다는 공속 근거가 있으면 풍오공·물오공으로 바꾼다. 물오공이 뒤라면 실드와 피해 완충을 남긴다.</p>
 <details class="route" data-plan="primary">
@@ -167,16 +470,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물오공 · 불이프 · 물화백</p><p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 비교 선택 · 압박안 풍오공 · 물오공 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-9cdfacdc96585652">불레골라스 밴이면 불이프의 방깎·망각을 풍슈타르크에 넣고 풍오공이 같은 몹을 친다. 물팔라딘 패시브가 살아 있는 동안 물오공은 기절 뒤 적의 즉시 턴을 감수해야 한다.</p></div>
 <div class="route-source"><p>공개 269판 중 이 상대 4·5픽은 5판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 같은 1판 중 위의 상대 4·5픽이 나온 건 1판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0승 1패.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>불발키리 선픽 269판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p26113"></span><span>풍배틀엔젤</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.7%"></span></span><span class="value">19.7% <small>(53/269)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p31315"></span><span>암사령 공주</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.7%"></span></span><span class="value">19.7% <small>(53/269)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26311"></span><span>물퓨어바닐라 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.4%"></span></span><span class="value">16.4% <small>(44/269)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍배틀엔젤 + 물퓨어바닐라 쿠키 · 40/269판 (14.9%) · 이 조합을 쓴 선수 3명</p><p class="sample-note muted">이 선픽을 쓴 선수 125명. 후속 풍배틀엔젤 53회 중 38회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 풍슈타르크 최다 (18/120판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-be04cd7742477bac">풍배틀엔젤·물쿠키면 풍드나와 불레골라스, 암사령 공주면 불이프를 붙인다. 물오공·풍오공으로 공격적으로 열었는데 물팔라딘이 나오면 광역 기절을 아낀다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-5742c1b2953cf6a4">불발키리는 상대가 가져갔다. 풍드나가 속도 이점을 줄여도 공격력 대비 방어력이 낮은 몹은 풍배틀엔젤 방무를 맞는다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>내 쪽이 추천 두 장으로 답한 공개 표본은 6판. 그 뒤 상대가 가장 많이 붙인 몹은 물오공, 암사령 공주 (각 3/6판).</p></details>
-</article><article aria-labelledby="title-15713" class="matchup" id="pick-15713">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>불발키리 선픽 269판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p26113"></span><span>풍배틀엔젤</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.7%"></span></span><span class="value">19.7% <small>(53/269)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p31315"></span><span>암사령 공주</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.7%"></span></span><span class="value">19.7% <small>(53/269)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26311"></span><span>물퓨어바닐라 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.4%"></span></span><span class="value">16.4% <small>(44/269)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍배틀엔젤 + 물퓨어바닐라 쿠키 · 40/269판 (14.9%) · 이 조합을 쓴 선수 3명</p><p class="sample-note muted">이 선픽을 쓴 선수 125명. 후속 풍배틀엔젤 53회 중 38회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 풍슈타르크 최다 (18/120판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-13812" data-opinion-context="불발키리 · 상대 1픽 · 1위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-5742c1b2953cf6a4">불발키리는 상대가 가져갔다. 풍드나가 속도 이점을 줄여도 공격력 대비 방어력이 낮은 몹은 풍배틀엔젤 방무를 맞는다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>내 쪽이 추천 두 장으로 답한 공개 표본은 6판. 그 뒤 상대가 가장 많이 붙인 몹은 물오공, 암사령 공주 (각 3/6판).</p></details></aside></article><article aria-labelledby="title-15713" class="matchup" id="pick-15713">
 <div class="match-head"><span aria-hidden="true" class="face p15713"></span><div><small>상대 1픽 · 2위</small><h2 id="title-15713">풍오라클</h2>
-<p>시즌 선픽 330,863회 · 7.9%</p></div></div>
+<p>시즌 선픽 330,863회 · 7.9%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-449675a2009be4f1"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p34712"></span><span>불레골라스</span></span></div>
-<p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-f9aff65c9eabdd5e">풍오공·불레골라스로 먼저 풍오라클을 위협한다. 룬이 준비된 불레골라스는 2스 공업 뒤 즉시 1스를 쓰므로, 물선인을 기다리지 않고 풍오공 방깎을 공격으로 바꿀 수 있다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불레골라스 룬작 완료 · 11/27 5회 선택 <span data-checkable="34712"></span></p></div>
+<p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-f9aff65c9eabdd5e">풍오공·불레골라스로 먼저 풍오라클을 위협한다. 룬이 준비된 불레골라스는 2스 공업 뒤 즉시 1스를 쓰므로, 물선인을 기다리지 않고 풍오공 방깎을 공격으로 바꿀 수 있다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불레골라스 룬작 완료 · 11/27 5회 선택 <span data-checkable="34712"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-78af80a5d412e6e3">암오라클·불화백처럼 해제가 붙으면 물화백을 잡는다. 물오공·불해왕이면 물팔라딘, 해제가 약한 폭탄 지원이면 물선인을 6·7픽으로 돌린다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-ff79dbabd302f794">암오라클·빛무희를 같게 두면 양쪽 모두 6·7픽 물화백을 쓸 수 있다. 기존안은 물선인의 면역이 남는 대신 적 빛무희가 우리 강화를 지울 때 상대 팀 게이지가 오를 수 있고, 압박안은 불레골라스로 풍오라클을 바로 노리는 대신 첫 폭탄을 버텨야 한다.</p><p class="switch" data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 선택을 바꿀 때" data-opinion-key="first-picks-ab34782dd457b850"><b>선택을 바꿀 때</b>　풍오공 방깎 뒤 불레골라스가 움직이지 못할 공속이거나 물선인 면역만 먼저 깔 수 있으면 물선인·풍오공으로 바꾼다.</p>
 <details class="route" data-plan="primary">
@@ -198,16 +498,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물선인 · 물화백 · 불이프</p><p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 비교 선택 · 기존안 풍오공 · 물선인 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-d47ea2ec68d49e9c">불레골라스가 밴되면 물화백이 빛무희의 해제에 반응한 뒤, 풍오공과 불이프가 풍오라클에게 방깎과 단일 공격을 잇는다. 물선인은 폭탄보다 먼저 면역을 쓸 수 있을 때 보호한다.</p></div>
 <div class="route-source"><p>공개 228판 중 이 상대 4·5픽은 15판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 같은 7판 중 위의 상대 4·5픽이 나온 건 1판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 1승 1패.
 시즌 39의 이전 보관분 5승 2패.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>풍오라클 선픽 228판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p15715"></span><span>암오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:23.2%"></span></span><span class="value">23.2% <small>(53/228)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:18.0%"></span></span><span class="value">18.0% <small>(41/228)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p23712"></span><span>불화백</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:18.0%"></span></span><span class="value">18.0% <small>(41/228)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암원숭이 + 불화백 · 33/228판 (14.5%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 116명. 후속 암오라클 53회 중 34회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물오공 최다 (31/122판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-78af80a5d412e6e3">암오라클·불화백처럼 해제가 붙으면 물화백을 잡는다. 물오공·불해왕이면 물팔라딘, 해제가 약한 폭탄 지원이면 물선인을 6·7픽으로 돌린다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-748887079bb20984">아군 선제 면역이 없는 시작이다. 상대 폭탄이 터지기 전에 내게 한 턴도 오지 않는 속도 차이면 두 딜러의 선제 압박은 성립하지 않는다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-25313" class="matchup" id="pick-25313">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>풍오라클 선픽 228판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p15715"></span><span>암오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:23.2%"></span></span><span class="value">23.2% <small>(53/228)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:18.0%"></span></span><span class="value">18.0% <small>(41/228)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p23712"></span><span>불화백</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:18.0%"></span></span><span class="value">18.0% <small>(41/228)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암원숭이 + 불화백 · 33/228판 (14.5%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 116명. 후속 암오라클 53회 중 34회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물오공 최다 (31/122판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-15713" data-opinion-context="풍오라클 · 상대 1픽 · 2위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-748887079bb20984">아군 선제 면역이 없는 시작이다. 상대 폭탄이 터지기 전에 내게 한 턴도 오지 않는 속도 차이면 두 딜러의 선제 압박은 성립하지 않는다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-25313" class="matchup" id="pick-25313">
 <div class="match-head"><span aria-hidden="true" class="face p25313"></span><div><small>상대 1픽 · 3위</small><h2 id="title-25313">풍스카이서퍼</h2>
-<p>시즌 선픽 283,667회 · 6.8%</p></div></div>
+<p>시즌 선픽 283,667회 · 6.8%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>조건부 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 조건부 · 내 2·3픽" data-opinion-key="first-picks-d974b2fd9a054dd0"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span></div>
-<p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 조건부 · 내 2·3픽" data-opinion-key="first-picks-ad3ab4bf05aee62f">풍오공·물오공으로 먼저 가져가자. 풍서퍼 선픽 109판 중 39판에서 상대가 바로 붙인 물오공을 선점한다. 풍오공은 24% 속리더와 방깎, 물오공은 단일 해제와 기절을 맡는다. 물오공으로 풍속 서퍼를 억지로 기절시키기보다 다음에 보이는 불속 딜러나 지원기를 끊는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물오공 11/27 11회 선택 <span data-checkable="16811"></span></p></div>
+<p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 조건부 · 내 2·3픽" data-opinion-key="first-picks-ad3ab4bf05aee62f">풍오공·물오공으로 먼저 가져가자. 풍서퍼 선픽 109판 중 39판에서 상대가 바로 붙인 물오공을 선점한다. 풍오공은 24% 속리더와 방깎, 물오공은 단일 해제와 기절을 맡는다. 물오공으로 풍속 서퍼를 억지로 기절시키기보다 다음에 보이는 불속 딜러나 지원기를 끊는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물오공 11/27 11회 선택 <span data-checkable="16811"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-3ba0163fcb11b3f2">불해왕·물팔라딘이면 불오공·물드나로 단일 피해를 보탠다. 물팔라딘에게 반응 턴을 줄 광역 기절은 아끼고, 물드나는 불해왕에 화력을 모은다. 물드나에 별도 치피 룬을 못 주면 같은 표적을 때릴 수 있는 준비 딜러를 남기고 풍서퍼 밴 가치를 다시 본다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-8dbc868f19704644">같은 불해왕·물팔라딘을 만나면 물선인은 불해왕보다 먼저 면역을 올려 불해왕 3스의 광역 기절·게이지 흡수에 대비한다. 불해왕 2스는 한 명의 면역을 지울 수 있다. 두 오공으로 열면 상대의 물오공 자리를 닫고 불해왕부터 직접 노릴 수 있다. 물팔라딘의 패시브가 준비됐을 때 기절을 걸면 상대도 즉시 턴을 얻는다는 비용이 있다.</p><p class="switch" data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 선택을 바꿀 때" data-opinion-key="first-picks-2276195ee5c73d8e"><b>선택을 바꿀 때</b>　상대 33% 속리더까지 반영해도 내 물선인이 먼저 면역을 쓸 수 있고, 물오공은 상대 핵심을 먼저 끊기 어려우면 풍오공·물선인으로 바꿔. 면역 뒤에 방깎과 피해를 이을 딜러는 6·7픽에 둔다.</p>
 <details class="route" data-plan="primary">
@@ -229,16 +526,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물선인 · 물화백 · 물드나</p><p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 비교 선택 · 기존안 풍오공 · 물선인 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-b4576ffbf0aa9035">불레골라스가 밴되면 풍오공의 2스 방깎 뒤 물드나 2스로 불이프를 노린다. 물화백은 불하그가 정화할 때 우리 팀 게이지를 당기고 물선인은 적 쿨밀에 앞서 면역을 건다.</p></div>
 <div class="route-source"><p>공개 109판 중 이 상대 4·5픽은 9판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 같은 3판 중 위의 상대 4·5픽이 나온 건 1판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 5승 2패.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>풍스카이서퍼 선픽 109판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:35.8%"></span></span><span class="value">35.8% <small>(39/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p19712"></span><span>불해왕</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:20.2%"></span></span><span class="value">20.2% <small>(22/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p15715"></span><span>암오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:13.8%"></span></span><span class="value">13.8% <small>(15/109)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암오라클 + 불하그 외 공동 1위 1조합 · 9/109판 (8.3%) · 이 조합을 쓴 선수 2명</p><p class="sample-note muted">이 선픽을 쓴 선수 85명. 후속 물오공 39회 중 5회는 같은 선수가 골랐다.</p><p class="sample-note">여기서 물오공을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-3ba0163fcb11b3f2">불해왕·물팔라딘이면 불오공·물드나로 단일 피해를 보탠다. 물팔라딘에게 반응 턴을 줄 광역 기절은 아끼고, 물드나는 불해왕에 화력을 모은다. 물드나에 별도 치피 룬을 못 주면 같은 표적을 때릴 수 있는 준비 딜러를 남기고 풍서퍼 밴 가치를 다시 본다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-b848a37f8f368165">22마리에 게이지 감소 자체로 반응하는 몹이 없다. 불비스트라이더는 별도 공격 룬이 필요한 후보이며, 물팔라딘은 아군이 기절·수면 등 행동불능에 걸리면 반응한다. 게이지 감소만으로는 턴을 얻지 못한다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-16813" class="matchup" id="pick-16813">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>풍스카이서퍼 선픽 109판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:35.8%"></span></span><span class="value">35.8% <small>(39/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p19712"></span><span>불해왕</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:20.2%"></span></span><span class="value">20.2% <small>(22/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p15715"></span><span>암오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:13.8%"></span></span><span class="value">13.8% <small>(15/109)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암오라클 + 불하그 외 공동 1위 1조합 · 9/109판 (8.3%) · 이 조합을 쓴 선수 2명</p><p class="sample-note muted">이 선픽을 쓴 선수 85명. 후속 물오공 39회 중 5회는 같은 선수가 골랐다.</p><p class="sample-note">여기서 물오공을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-25313" data-opinion-context="풍스카이서퍼 · 상대 1픽 · 3위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-b848a37f8f368165">22마리에 게이지 감소 자체로 반응하는 몹이 없다. 불비스트라이더는 별도 공격 룬이 필요한 후보이며, 물팔라딘은 아군이 기절·수면 등 행동불능에 걸리면 반응한다. 게이지 감소만으로는 턴을 얻지 못한다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-16813" class="matchup" id="pick-16813">
 <div class="match-head"><span aria-hidden="true" class="face p16813"></span><div><small>상대 1픽 · 4위</small><h2 id="title-16813">풍오공</h2>
-<p>시즌 선픽 201,020회 · 4.8%</p></div></div>
+<p>시즌 선픽 201,020회 · 4.8%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-b2a85d53d2c18595"><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p19212"></span><span>불이프</span></span></div>
-<p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-86c30f853dcbeb1b">물선인·불이프로 적 풍오공의 반격과 피해 감소를 끈다. 자주 붙는 물선인을 선점해 적 풍오공이 면역 속에서 반격하는 조합도 끊는다.</p><p class="status">물선인 11/27 5회 선택 <span data-checkable="18611"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div>
+<p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-86c30f853dcbeb1b">물선인·불이프로 적 풍오공의 반격과 피해 감소를 끈다. 자주 붙는 물선인을 선점해 적 풍오공이 면역 속에서 반격하는 조합도 끊는다.</p><p class="status">물선인 11/27 5회 선택 <span data-checkable="18611"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-5961dc126f703b7d">불듀크가 붙으면 물오공으로 첫 액티브를 끊고, 회복 지원이나 물팔라딘이 붙으면 불레골라스의 피해와 암도깨비의 회복 반응을 더한다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-adfad23e460c6e49">풍오공 선픽 94판 중 2판에서 불하그·물팔라딘이 붙었다. 두 안 모두 불이프로 풍오공의 피해 감소·반격을 막을 수 있다. 물선인·불이프는 면역을 먼저 걸면 물팔라딘 1스 기절에 대비할 수 있다. 불이프·불레골라스는 불하그가 망각을 풀기 전에 풍오공을 집중 공격할 수 있다. 상대가 물선인을 가져가면 6·7픽에 해제 몹이 필요하다.</p><p class="switch" data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 선택을 바꿀 때" data-opinion-key="first-picks-f5a9b7d426df1698"><b>선택을 바꿀 때</b>　불이프의 망각 다음에 불레골라스가 끼어들 틈 없이 칠 수 있고, 상대가 물선인을 가져가도 따로 해제할 몹을 남길 수 있으면 불이프·불레골라스로 바꾼다.</p>
 <details class="route" data-plan="primary">
@@ -260,16 +554,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　불이프 · 물화백 · 물오공 · 풍유니콘</p><p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 비교 선택 · 압박안 불이프 · 불레골라스 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-c7e2941d9e4f1b8e">불레골라스가 잘리면 불이프가 적 풍오공에게 망각·방깎을 걸고 풍유니콘이 이어 친다. 위험한 물스카이서퍼가 먼저 한 아군을 끊을 수 있으면 물오공의 첫 3스 표적을 그쪽으로 바꾼다.</p></div>
 <div class="route-source"><p>공개 94판 중 이 상대 4·5픽은 27판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>풍오공 선픽 94판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:37.2%"></span></span><span class="value">37.2% <small>(35/94)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p33312"></span><span>불듀크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:31.9%"></span></span><span class="value">31.9% <small>(30/94)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p28915"></span><span>암도깨비</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.0%"></span></span><span class="value">16.0% <small>(15/94)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　물선인 + 불듀크 · 27/94판 (28.7%) · 이 조합을 쓴 선수 8명</p><p class="sample-note muted">이 선픽을 쓴 선수 60명. 후속 물선인 35회 중 19회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 암도깨비 최다 (15/70판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 물선인을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-5961dc126f703b7d">불듀크가 붙으면 물오공으로 첫 액티브를 끊고, 회복 지원이나 물팔라딘이 붙으면 불레골라스의 피해와 암도깨비의 회복 반응을 더한다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-4980f5502f9ea4ab">상대가 풍오공 24% 리더를 가져갔다. 내 물선인이 늦으면 선제 면역이 깔리기 전에 방깎을 맞을 수 있다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-18611" class="matchup" id="pick-18611">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>풍오공 선픽 94판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:37.2%"></span></span><span class="value">37.2% <small>(35/94)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p33312"></span><span>불듀크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:31.9%"></span></span><span class="value">31.9% <small>(30/94)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p28915"></span><span>암도깨비</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.0%"></span></span><span class="value">16.0% <small>(15/94)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　물선인 + 불듀크 · 27/94판 (28.7%) · 이 조합을 쓴 선수 8명</p><p class="sample-note muted">이 선픽을 쓴 선수 60명. 후속 물선인 35회 중 19회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 암도깨비 최다 (15/70판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 물선인을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-16813" data-opinion-context="풍오공 · 상대 1픽 · 4위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-4980f5502f9ea4ab">상대가 풍오공 24% 리더를 가져갔다. 내 물선인이 늦으면 선제 면역이 깔리기 전에 방깎을 맞을 수 있다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-18611" class="matchup" id="pick-18611">
 <div class="match-head"><span aria-hidden="true" class="face p18611"></span><div><small>상대 1픽 · 5위</small><h2 id="title-18611">물선인</h2>
-<p>시즌 선픽 192,438회 · 4.6%</p></div></div>
+<p>시즌 선픽 192,438회 · 4.6%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-4091d144200b125d"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p23711"></span><span>물화백</span></span></div>
-<p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-99d9db7bd533bb7c">풍오공·물화백을 유지한다. 자주 붙는 풍오공을 먼저 가져오고, 물화백의 광역 해제 다음 풍오공이 물선인에게 방깎을 걸어 후속 딜러의 표적을 만든다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물화백 11/27 2회 선택 <span data-checkable="23711"></span></p></div>
+<p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-99d9db7bd533bb7c">풍오공·물화백을 유지한다. 자주 붙는 풍오공을 먼저 가져오고, 물화백의 광역 해제 다음 풍오공이 물선인에게 방깎을 걸어 후속 딜러의 표적을 만든다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물화백 11/27 2회 선택 <span data-checkable="23711"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-523f453e96011fd9">불듀크가 붙으면 물오공으로 첫 행동을 끊고 별도 딜러를 더한다. 암도깨비면 불이프, 물팬더면 풍유니콘으로 큰 체력 피해를 쓰기 전 본체를 압박한다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-aa57af77997fa045">불듀크·암도깨비가 같은 4·5픽이라면 기존안은 물화백으로 물선인 면역을 걷고 풍오공이 방깎을 잇는다. 압박안은 물오공이 불듀크부터 끊지만 면역이 이미 깔리면 한 표적씩 해제해야 한다.</p><p class="switch" data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 선택을 바꿀 때" data-opinion-key="first-picks-1bf3d122b06b1bfb"><b>선택을 바꿀 때</b>　적 물선인보다 물오공이 먼저 움직일 근거가 있고 물팔라딘이 붙어도 단일 딜로 전환할 수 있으면 풍오공·물오공. 속도·밴이 불확실하면 광역 해제부터 갖춘다.</p>
 <details class="route" data-plan="primary">
@@ -291,16 +582,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물오공 · 풍유니콘 · 불오라클</p><p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 비교 선택 · 압박안 풍오공 · 물오공 · 상대의 다른 밴 · 불이프" data-opinion-key="first-picks-d1abcd020d7002a0">불이프가 잘리면 불오라클이 먼저 면역을 걷고 풍오공 방깎 뒤 풍유니콘이 물스카이서퍼를 집중한다. 물오공은 불레골라스가 공업을 쓸 차례 전에 3스로 끊는다.</p></div>
 <div class="route-source"><p>공개 128판 중 이 상대 4·5픽은 1판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 같은 2판 중 위의 상대 4·5픽이 나온 건 1판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 1승 1패.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>물선인 선픽 128판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p33312"></span><span>불듀크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:46.1%"></span></span><span class="value">46.1% <small>(59/128)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:39.8%"></span></span><span class="value">39.8% <small>(51/128)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p28915"></span><span>암도깨비</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:14.8%"></span></span><span class="value">14.8% <small>(19/128)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍오공 + 불듀크 · 24/128판 (18.8%) · 이 조합을 쓴 선수 7명</p><p class="sample-note muted">이 선픽을 쓴 선수 41명. 후속 불듀크 59회 중 32회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 불듀크 최다 (12/41판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 풍오공을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-523f453e96011fd9">불듀크가 붙으면 물오공으로 첫 행동을 끊고 별도 딜러를 더한다. 암도깨비면 불이프, 물팬더면 풍유니콘으로 큰 체력 피해를 쓰기 전 본체를 압박한다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-1423a884c5659558">적이 물선인을 가져가 선제 면역·실드가 비었다. 룬이 별도로 준비됐다면 22마리 밖 불아크엔젤이 팀 정화·면역을 맡을 수 있다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>내 쪽이 추천 두 장으로 답한 공개 표본은 1판. 그 뒤 상대가 가장 많이 붙인 몹은 풍드래곤, 불듀크 (각 1/1판).</p></details>
-</article><article aria-labelledby="title-23711" class="matchup" id="pick-23711">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>물선인 선픽 128판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p33312"></span><span>불듀크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:46.1%"></span></span><span class="value">46.1% <small>(59/128)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:39.8%"></span></span><span class="value">39.8% <small>(51/128)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p28915"></span><span>암도깨비</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:14.8%"></span></span><span class="value">14.8% <small>(19/128)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍오공 + 불듀크 · 24/128판 (18.8%) · 이 조합을 쓴 선수 7명</p><p class="sample-note muted">이 선픽을 쓴 선수 41명. 후속 불듀크 59회 중 32회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 불듀크 최다 (12/41판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 풍오공을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-18611" data-opinion-context="물선인 · 상대 1픽 · 5위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-1423a884c5659558">적이 물선인을 가져가 선제 면역·실드가 비었다. 룬이 별도로 준비됐다면 22마리 밖 불아크엔젤이 팀 정화·면역을 맡을 수 있다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>내 쪽이 추천 두 장으로 답한 공개 표본은 1판. 그 뒤 상대가 가장 많이 붙인 몹은 풍드래곤, 불듀크 (각 1/1판).</p></details></aside></article><article aria-labelledby="title-23711" class="matchup" id="pick-23711">
 <div class="match-head"><span aria-hidden="true" class="face p23711"></span><div><small>상대 1픽 · 6위</small><h2 id="title-23711">물화백</h2>
-<p>시즌 선픽 189,563회 · 4.5%</p></div></div>
+<p>시즌 선픽 189,563회 · 4.5%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-83b87caee35e3a08"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span></div>
-<p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-4bb8210db259e063">풍오공·물오공을 잡아. 풍오공은 물화백 본체에 속성 우위 방깎을 넣고, 물오공은 뒤에 누가 나오는지 보고 3스를 쓸 표적을 고른다. 이미 강화를 두른 적을 벗기면 물화백이 그 적의 게이지를 당긴다는 점까지 계산해.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물오공 11/27 11회 선택 <span data-checkable="16811"></span></p></div>
+<p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-4bb8210db259e063">풍오공·물오공을 잡아. 풍오공은 물화백 본체에 속성 우위 방깎을 넣고, 물오공은 뒤에 누가 나오는지 보고 3스를 쓸 표적을 고른다. 이미 강화를 두른 적을 벗기면 물화백이 그 적의 게이지를 당긴다는 점까지 계산해.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물오공 11/27 11회 선택 <span data-checkable="16811"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-816f574c6d5bab67">불아크엔젤·풍홀리베리 쿠키가 나오면 불레골라스·물드나. 불아크의 면역을 물오공으로 먼저 끊고, 두 딜러는 각각 풍홀리베리와 불아크를 때릴 수 있다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-b1ea8a4f7abf54dc">같은 불아크·풍홀리베리 상대로 기존 네 장은 물오공 기절과 물드나 2스를 바로 쓴다. 압박안 네 장은 물뇌제의 지식까지 얻지만, 상대가 강화기를 아끼면 물드나를 10픽까지 기다려야 한다.</p><p class="switch" data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 선택을 바꿀 때" data-opinion-key="first-picks-b83fa5549c1b49f4"><b>선택을 바꿀 때</b>　불아크 선턴을 물오공으로 끊을 속도면 두 오공을 유지해. 물오공이 늦고 별도 체력 룬을 준 물뇌제가 첫 공격을 버틴다면 불레골라스를 앞당겨 보호 조합을 공략해.</p>
 <details class="route" data-plan="primary">
@@ -322,16 +610,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물오공 · 물뇌제 · 물드나</p><p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 비교 선택 · 압박안 풍오공 · 불레골라스 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-416fb1e334d07c92">불레골라스가 대신 잘리면 풍오공 방깎 뒤 물드나 2스를 남겼다. 상대 방업·실드로 지식이 5개 쌓이면 물뇌제 3스로 같은 표적의 최대 체력을 줄이고 회복한다.</p></div>
 <div class="route-source"><p>공개 102판 중 이 상대 4·5픽은 22판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>물화백 선픽 102판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p17012"></span><span>불아크엔젤</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:35.3%"></span></span><span class="value">35.3% <small>(36/102)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26413"></span><span>풍홀리베리 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:22.5%"></span></span><span class="value">22.5% <small>(23/102)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26313"></span><span>풍퓨어바닐라 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:7.8%"></span></span><span class="value">7.8% <small>(8/102)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　불아크엔젤 + 풍홀리베리 쿠키 · 22/102판 (21.6%) · 이 조합을 쓴 선수 4명</p><p class="sample-note muted">이 선픽을 쓴 선수 57명. 후속 불아크엔젤 36회 중 30회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 풍퓨어바닐라 쿠키 최다 (8/57판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-816f574c6d5bab67">불아크엔젤·풍홀리베리 쿠키가 나오면 불레골라스·물드나. 불아크의 면역을 물오공으로 먼저 끊고, 두 딜러는 각각 풍홀리베리와 불아크를 때릴 수 있다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-0540244bcc643b91">물드나가 풍오공과 별도 룬을 쓸 수 있어야 한다. 물화백을 빼앗긴 상황에서 광역 강탈로 상대 전원을 움직이는 접근은 위험하다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-35913" class="matchup" id="pick-35913">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>물화백 선픽 102판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p17012"></span><span>불아크엔젤</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:35.3%"></span></span><span class="value">35.3% <small>(36/102)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26413"></span><span>풍홀리베리 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:22.5%"></span></span><span class="value">22.5% <small>(23/102)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26313"></span><span>풍퓨어바닐라 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:7.8%"></span></span><span class="value">7.8% <small>(8/102)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　불아크엔젤 + 풍홀리베리 쿠키 · 22/102판 (21.6%) · 이 조합을 쓴 선수 4명</p><p class="sample-note muted">이 선픽을 쓴 선수 57명. 후속 불아크엔젤 36회 중 30회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 풍퓨어바닐라 쿠키 최다 (8/57판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-23711" data-opinion-context="물화백 · 상대 1픽 · 6위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-0540244bcc643b91">물드나가 풍오공과 별도 룬을 쓸 수 있어야 한다. 물화백을 빼앗긴 상황에서 광역 강탈로 상대 전원을 움직이는 접근은 위험하다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-35913" class="matchup" id="pick-35913">
 <div class="match-head"><span aria-hidden="true" class="face p35913"></span><div><small>상대 1픽 · 7위</small><h2 id="title-35913">풍슈타르크</h2>
-<p>시즌 선픽 145,618회 · 3.5%</p></div></div>
+<p>시즌 선픽 145,618회 · 3.5%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-b2a39aa8d826a1c5"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p34712"></span><span>불레골라스</span></span></div>
-<p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-7af0667a8392208b">풍오공·불레골라스로 시작해. 준비가 확인된 불레골라스의 2스 후 연타를 풍슈타르크에 몰 수 있다. 맞을 때마다 상대 게이지가 차므로 방깎 뒤 한 차례에 압박하고, 다른 적을 광역으로 건드리지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불레골라스 룬작 완료 · 11/27 5회 선택 <span data-checkable="34712"></span></p></div>
+<p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-7af0667a8392208b">풍오공·불레골라스로 시작해. 준비가 확인된 불레골라스의 2스 후 연타를 풍슈타르크에 몰 수 있다. 맞을 때마다 상대 게이지가 차므로 방깎 뒤 한 차례에 압박하고, 다른 적을 광역으로 건드리지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불레골라스 룬작 완료 · 11/27 5회 선택 <span data-checkable="34712"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-f41795db5a089145">불뱀파이어·물데빌 메이든이 붙으면 불이프·물오공. 불이프가 불뱀파이어의 턴 공급을 끊고, 물오공은 물데빌 메이든을 직접 때려 격리 기간을 줄일 수 있다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-63ae4a94c51f7dff">불뱀파이어·물데빌 메이든이 같은 4·5픽일 때 기존 네 장은 물드나의 자체 회복으로 오래 싸운다. 압박안 네 장은 불이프·불레골라스를 함께 세워 풍슈타르크를 집중하고 물오공을 불뱀파이어에게 돌릴 수 있다.</p><p class="switch" data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 선택을 바꿀 때" data-opinion-key="first-picks-4973f7a477d0f0ef"><b>선택을 바꿀 때</b>　현재 불레골라스가 풍오공의 방깎 뒤 같은 적을 몰아칠 수 있으면 압박안. 첫 공격 뒤 풍슈타르크가 살아 도발할 위험이 크고 불이프가 그 전에 망각을 넣을 수 있다면, 불이프를 2·3픽으로 앞당겨.</p>
 <details class="route" data-plan="primary">
@@ -353,16 +638,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 불이프 · 물오공 · 불레골라스</p><p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 비교 선택 · 기존안 풍오공 · 불이프 · 상대의 다른 밴 · 물드나" data-opinion-key="first-picks-034508252ea182ea">물드나가 대신 잘리면 불이프 2스를 풍슈타르크에게 써 방깎·망각을 노리고, 불레골라스 2스 후 평타를 같은 표적에 잇는다.</p></div>
 <div class="route-source"><p>공개 37판 중 이 상대 4·5픽은 1판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>풍슈타르크 선픽 37판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p23711"></span><span>물화백</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.2%"></span></span><span class="value">16.2% <small>(6/37)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:10.8%"></span></span><span class="value">10.8% <small>(4/37)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26313"></span><span>풍퓨어바닐라 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:10.8%"></span></span><span class="value">10.8% <small>(4/37)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암드래곤나이트 + 풍퓨어바닐라 쿠키 · 2/37판 (5.4%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 34명. 후속 물화백 6회 중 1회는 같은 선수가 골랐다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-f41795db5a089145">불뱀파이어·물데빌 메이든이 붙으면 불이프·물오공. 불이프가 불뱀파이어의 턴 공급을 끊고, 물오공은 물데빌 메이든을 직접 때려 격리 기간을 줄일 수 있다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-1d0baafcb01c5515">불레골라스가 먼저 치고도 풍슈타르크를 마무리할 피해가 부족하면 연타로 도발 차례를 앞당길 수 있다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-21415" class="matchup" id="pick-21415">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>풍슈타르크 선픽 37판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p23711"></span><span>물화백</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.2%"></span></span><span class="value">16.2% <small>(6/37)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:10.8%"></span></span><span class="value">10.8% <small>(4/37)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p26313"></span><span>풍퓨어바닐라 쿠키</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:10.8%"></span></span><span class="value">10.8% <small>(4/37)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암드래곤나이트 + 풍퓨어바닐라 쿠키 · 2/37판 (5.4%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 34명. 후속 물화백 6회 중 1회는 같은 선수가 골랐다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-35913" data-opinion-context="풍슈타르크 · 상대 1픽 · 7위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-1d0baafcb01c5515">불레골라스가 먼저 치고도 풍슈타르크를 마무리할 피해가 부족하면 연타로 도발 차례를 앞당길 수 있다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-21415" class="matchup" id="pick-21415">
 <div class="match-head"><span aria-hidden="true" class="face p21415"></span><div><small>상대 1픽 · 8위</small><h2 id="title-21415">암하프술사</h2>
-<p>시즌 선픽 125,122회 · 3.0%</p></div></div>
+<p>시즌 선픽 125,122회 · 3.0%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>조건부 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 조건부 · 내 2·3픽" data-opinion-key="first-picks-68a38a779ed98cc6"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span></div>
-<p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 조건부 · 내 2·3픽" data-opinion-key="first-picks-2f8f52bba7834506">속도 우위를 확인하지 못한 기본값은 풍오공·물선인. 풍오공 2스로 암하프술사를 압박하고, 물선인은 교환 전에 실드를 올리거나 교환 뒤 2스로 회복한다. 암하프술사의 체력 교환은 면역을 무시한다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물선인 11/27 5회 선택 <span data-checkable="18611"></span></p></div>
+<p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 조건부 · 내 2·3픽" data-opinion-key="first-picks-2f8f52bba7834506">속도 우위를 확인하지 못한 기본값은 풍오공·물선인. 풍오공 2스로 암하프술사를 압박하고, 물선인은 교환 전에 실드를 올리거나 교환 뒤 2스로 회복한다. 암하프술사의 체력 교환은 면역을 무시한다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물선인 11/27 5회 선택 <span data-checkable="18611"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-0cf3c3f65c32911d">암쌍둥이 천사·물이노스케가 실제로 붙으면 물화백·불레골라스. 물이노스케의 광역 해제에 움직일 기회를 얻고, 10픽이 잘려도 암하프술사 또는 턴 공급 몹을 때릴 딜러를 둘 남긴다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-b44a49a7063b2856">암쌍둥이·물이노스케에 기존안은 6·7픽까지 물화백과 불레골라스를 함께 챙긴다. 두 오공으로 열면 물선인·불레골라스를 6·7픽에 확보하지만, 물화백이 10픽 전에 선점될 수 있고 교환 전 기절 시도도 공속에 달린다.</p><p class="switch" data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 선택을 바꿀 때" data-opinion-key="first-picks-0bae56e94f522bd6"><b>선택을 바꿀 때</b>　상대 속리더까지 넣고 물오공이 암하프와 즉시 턴을 줄 몹보다 빠르다고 판단할 근거가 있을 때 두 오공으로 전환해. 속도를 모르면 풍오공·물선인으로 시작하고 불레골라스를 6·7픽에 확보해.</p>
 <details class="route" data-plan="primary">
@@ -384,16 +666,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물오공 · 물선인 · 물화백</p><p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 비교 선택 · 압박안 풍오공 · 물오공 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-cb4ba6d884ac18f3">불레골라스 밴이면 물화백으로 암쌍둥이 면역을 걷고 풍오공 2스와 물오공 단일 3스를 암하프에 모은다. 풍드나가 남아 물오공의 신속 우위가 사라졌으므로 첫 기절을 확정하지 않는다. 물선인의 2스도 같은 표적에 고정 피해를 보탠다.</p></div>
 <div class="route-source"><p>공개 109판 중 이 상대 4·5픽은 36판. 상대 8·9픽까지 같은 순서로 이어진 경기는 26판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 1승 1패.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>암하프술사 선픽 109판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p29115"></span><span>암쌍둥이 천사</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:41.3%"></span></span><span class="value">41.3% <small>(45/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p32111"></span><span>물하시비라 이노스케</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:34.9%"></span></span><span class="value">34.9% <small>(38/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16613"></span><span>풍드나</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:9.2%"></span></span><span class="value">9.2% <small>(10/109)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암쌍둥이 천사 + 물하시비라 이노스케 · 36/109판 (33.0%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 59명. 후속 암쌍둥이 천사 45회 중 45회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물화백 최다 (7/61판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-0cf3c3f65c32911d">암쌍둥이 천사·물이노스케가 실제로 붙으면 물화백·불레골라스. 물이노스케의 광역 해제에 움직일 기회를 얻고, 10픽이 잘려도 암하프술사 또는 턴 공급 몹을 때릴 딜러를 둘 남긴다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-b023309384138b81">체력 교환을 확정으로 막는 준비 몹은 없다. 11월 27일 12:45에는 10픽 풍쿠키가 밴된 뒤 회복이 사라졌다. 빠른 물오공을 고를 때도 6·7픽까지 회복 한 장을 배치해.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>내 쪽이 추천 두 장으로 답한 공개 표본은 2판. 그 뒤 상대가 가장 많이 붙인 몹은 빛오라클, 불해왕, 암쌍둥이 천사, 물하시비라 이노스케 (각 1/2판).</p></details>
-</article><article aria-labelledby="title-30713" class="matchup" id="pick-30713">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>암하프술사 선픽 109판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p29115"></span><span>암쌍둥이 천사</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:41.3%"></span></span><span class="value">41.3% <small>(45/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p32111"></span><span>물하시비라 이노스케</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:34.9%"></span></span><span class="value">34.9% <small>(38/109)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16613"></span><span>풍드나</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:9.2%"></span></span><span class="value">9.2% <small>(10/109)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　암쌍둥이 천사 + 물하시비라 이노스케 · 36/109판 (33.0%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 59명. 후속 암쌍둥이 천사 45회 중 45회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물화백 최다 (7/61판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-21415" data-opinion-context="암하프술사 · 상대 1픽 · 8위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-b023309384138b81">체력 교환을 확정으로 막는 준비 몹은 없다. 11월 27일 12:45에는 10픽 풍쿠키가 밴된 뒤 회복이 사라졌다. 빠른 물오공을 고를 때도 6·7픽까지 회복 한 장을 배치해.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>내 쪽이 추천 두 장으로 답한 공개 표본은 2판. 그 뒤 상대가 가장 많이 붙인 몹은 빛오라클, 불해왕, 암쌍둥이 천사, 물하시비라 이노스케 (각 1/2판).</p></details></aside></article><article aria-labelledby="title-30713" class="matchup" id="pick-30713">
 <div class="match-head"><span aria-hidden="true" class="face p30713"></span><div><small>상대 1픽 · 9위</small><h2 id="title-30713">풍드라칸 전사</h2>
-<p>시즌 선픽 122,355회 · 2.9%</p></div></div>
+<p>시즌 선픽 122,355회 · 2.9%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-c144d1bf2cd4f0f7"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p34712"></span><span>불레골라스</span></span></div>
-<p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-e4dab32a1439ee8a">풍오공·불레골라스. 광역 해제에 맞을 때까지 기다리지 않고, 불레골라스 2스 후 평타로 풍드라칸 본체를 노린다. 풍오공의 속리더를 쓰되 상대 33%를 앞선다고 가정하지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불레골라스 룬작 완료 · 11/27 5회 선택 <span data-checkable="34712"></span></p></div>
+<p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-e4dab32a1439ee8a">풍오공·불레골라스. 광역 해제에 맞을 때까지 기다리지 않고, 불레골라스 2스 후 평타로 풍드라칸 본체를 노린다. 풍오공의 속리더를 쓰되 상대 33%를 앞선다고 가정하지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불레골라스 룬작 완료 · 11/27 5회 선택 <span data-checkable="34712"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-a1ae551f9af4d4c0">풍오컬트·빛오컬트가 붙으면 물화백·불오공. 아군 의지를 벗기는 빛오컬트·풍드라칸에는 물화백이 반응하고, 기절 면역인 불오공이 풍오컬트를 2스 방깎으로 때릴 수 있다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-0f2ce4110d0c88bf">같은 두 오컬트에 기존 네 장은 물팔라딘까지 준비해 기절을 받아치지만 주요 공격수는 두 오공이다. 압박안 네 장은 물팔라딘 자리를 불레골라스로 써 불오공 방깎 직후 풍속 표적을 연속 공격한다.</p><p class="switch" data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 선택을 바꿀 때" data-opinion-key="first-picks-3bdc85826f5ed8ee"><b>선택을 바꿀 때</b>　불레골라스가 적의 첫 광역을 버티고 풍속 표적을 때릴 차례를 받을 수 있으면 압박안. 반대로 첫 광역에 쓰러질 내구이거나 물화백을 6·7픽까지 남겨 두기 어려운 상대라면 물화백을 먼저 가져가.</p>
 <details class="route" data-plan="primary">
@@ -415,16 +694,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물화백 · 물팔라딘 · 불오라클</p><p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 비교 선택 · 기존안 풍오공 · 물화백 · 상대의 다른 밴 · 불오공" data-opinion-key="first-picks-15d4055b2c98f266">불오공이 대신 잘리면 물화백이 실제 해제에 반응한 뒤 2스로 빛오컬트의 방업을 걷어. 풍오공 2스로 빛오컬트를 직접 압박하고 불오라클로 남은 강화를 걷는다.</p></div>
 <div class="route-source"><p>공개 100판 중 이 상대 4·5픽은 20판. 상대 8·9픽까지 같은 순서로 이어진 경기는 7판. 내 2·3픽까지 같은 2판 중 위의 상대 4·5픽이 나온 건 1판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>풍드라칸 전사 선픽 100판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p16114"></span><span>빛오컬트</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:51.0%"></span></span><span class="value">51.0% <small>(51/100)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16113"></span><span>풍오컬트</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:29.0%"></span></span><span class="value">29.0% <small>(29/100)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:14.0%"></span></span><span class="value">14.0% <small>(14/100)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍오컬트 + 빛오컬트 · 20/100판 (20.0%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 29명. 후속 빛오컬트 51회 중 37회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물사령 공주 최다 (6/25판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-a1ae551f9af4d4c0">풍오컬트·빛오컬트가 붙으면 물화백·불오공. 아군 의지를 벗기는 빛오컬트·풍드라칸에는 물화백이 반응하고, 기절 면역인 불오공이 풍오컬트를 2스 방깎으로 때릴 수 있다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-8bab8dd597ea9382">선턴을 내주고 불레골라스가 기절하거나 쓰러질 내구라면 첫 두 장부터 물화백을 확보해야 한다. 불오공에게 별도 공격형 룬을 줄 수 있어야 한다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-17411" class="matchup" id="pick-17411">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>풍드라칸 전사 선픽 100판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p16114"></span><span>빛오컬트</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:51.0%"></span></span><span class="value">51.0% <small>(51/100)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16113"></span><span>풍오컬트</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:29.0%"></span></span><span class="value">29.0% <small>(29/100)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:14.0%"></span></span><span class="value">14.0% <small>(14/100)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍오컬트 + 빛오컬트 · 20/100판 (20.0%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 29명. 후속 빛오컬트 51회 중 37회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물사령 공주 최다 (6/25판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-30713" data-opinion-context="풍드라칸 전사 · 상대 1픽 · 9위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-8bab8dd597ea9382">선턴을 내주고 불레골라스가 기절하거나 쓰러질 내구라면 첫 두 장부터 물화백을 확보해야 한다. 불오공에게 별도 공격형 룬을 줄 수 있어야 한다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-17411" class="matchup" id="pick-17411">
 <div class="match-head"><span aria-hidden="true" class="face p17411"></span><div><small>상대 1픽 · 10위</small><h2 id="title-17411">물신수승</h2>
-<p>시즌 선픽 109,970회 · 2.6%</p></div></div>
+<p>시즌 선픽 109,970회 · 2.6%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-1e84fa3454794efc"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p21513"></span><span>풍유니콘</span></span></div>
-<p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-daa882287232f341">풍오공·풍유니콘으로 시작해 호위한 쪽의 본체인 물신수승을 노려. 풍오공이 방깎을 걸고, 룬이 준비된 풍유니콘이 사람 형태 2스 네 번으로 후속타를 넣는다. 보호가 걸린 딜러를 먼저 치지 않아도 된다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　풍유니콘 룬작 완료 · 11/27 2회 선택</p></div>
+<p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-daa882287232f341">풍오공·풍유니콘으로 시작해 호위한 쪽의 본체인 물신수승을 노려. 풍오공이 방깎을 걸고, 룬이 준비된 풍유니콘이 사람 형태 2스 네 번으로 후속타를 넣는다. 보호가 걸린 딜러를 먼저 치지 않아도 된다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　풍유니콘 룬작 완료 · 11/27 2회 선택</p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-1bb6176851016a3b">풍배틀엔젤·빛에이보르가 실제로 붙으면 물화백·불이프. 광역 해제로 호위를 걷고 불이프로 빛에이보르의 기절 면역·턴 게이지를 망각시켜. 첫 두 장의 단일 딜은 그대로 남는다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-052193a3ae7f22ed">같은 풍배틀엔젤·빛에이보르를 보면 기존 네 장은 불드나로 본인의 생존을 챙기고, 압박안 네 장은 풍유니콘으로 물신수승 본체를 당장 때린다. 후자는 풍배틀엔젤 밴 의존도가 높다.</p><p class="switch" data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 선택을 바꿀 때" data-opinion-key="first-picks-81d684cc7f37b27d"><b>선택을 바꿀 때</b>　풍유니콘이 한 턴 버티고 물화백을 6·7픽에 잡을 여지가 있으면 압박안. 상대가 물화백을 먼저 가져가거나 저격 상대로 사람 형태가 위험하면 물화백을 앞당기고 불드나를 6·7픽으로 둬.</p>
 <details class="route" data-plan="primary">
@@ -446,16 +722,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　물화백 · 불이프 · 불드나 · 불레골라스</p><p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 비교 선택 · 기존안 풍오공 · 물화백 · 상대의 다른 밴 · 풍오공" data-opinion-key="first-picks-e21009bbf4b10002">풍오공이 대신 잘리면 물화백이 호위를 걷은 뒤 불이프 2스로 빛에이보르를 방깎·망각하고, 불레골라스 2스 후 평타를 같은 표적에 잇는다.</p></div>
 <div class="route-source"><p>공개 24판 중 이 상대 4·5픽은 4판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>물신수승 선픽 24판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p26113"></span><span>풍배틀엔젤</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:20.8%"></span></span><span class="value">20.8% <small>(5/24)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p27714"></span><span>빛에이보르</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:20.8%"></span></span><span class="value">20.8% <small>(5/24)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p15712"></span><span>불오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.7%"></span></span><span class="value">16.7% <small>(4/24)</small></span></li></ul><p class="ties muted">같은 빈도 · 풍바이슨</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍배틀엔젤 + 빛에이보르 · 4/24판 (16.7%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 19명. 후속 풍배틀엔젤 5회 중 4회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 불오라클·풍바이슨 최다 (4/19판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-1bb6176851016a3b">풍배틀엔젤·빛에이보르가 실제로 붙으면 물화백·불이프. 광역 해제로 호위를 걷고 불이프로 빛에이보르의 기절 면역·턴 게이지를 망각시켜. 첫 두 장의 단일 딜은 그대로 남는다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-5798e415d1d5a905">풍유니콘이 사람 형태로 턴을 넘기면 최대 체력이 줄어 저격에 취약하다. 실제 공속·치확·내구 확인 전에는 네 타 후 바로 원복한다고 계산하지 않는다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-16811" class="matchup" id="pick-16811">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>물신수승 선픽 24판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p26113"></span><span>풍배틀엔젤</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:20.8%"></span></span><span class="value">20.8% <small>(5/24)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p27714"></span><span>빛에이보르</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:20.8%"></span></span><span class="value">20.8% <small>(5/24)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p15712"></span><span>불오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.7%"></span></span><span class="value">16.7% <small>(4/24)</small></span></li></ul><p class="ties muted">같은 빈도 · 풍바이슨</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　풍배틀엔젤 + 빛에이보르 · 4/24판 (16.7%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 19명. 후속 풍배틀엔젤 5회 중 4회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 불오라클·풍바이슨 최다 (4/19판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-17411" data-opinion-context="물신수승 · 상대 1픽 · 10위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-5798e415d1d5a905">풍유니콘이 사람 형태로 턴을 넘기면 최대 체력이 줄어 저격에 취약하다. 실제 공속·치확·내구 확인 전에는 네 타 후 바로 원복한다고 계산하지 않는다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-16811" class="matchup" id="pick-16811">
 <div class="match-head"><span aria-hidden="true" class="face p16811"></span><div><small>상대 1픽 · 11위</small><h2 id="title-16811">물오공</h2>
-<p>시즌 선픽 107,964회 · 2.6%</p></div></div>
+<p>시즌 선픽 107,964회 · 2.6%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-5d969f3c68c83983"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p21811"></span><span>물팔라딘</span></span></div>
-<p data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-cad1a8c93699b586">풍오공·물팔라딘을 잡는다. 풍오공은 2스로 물오공을 방깎하고, 물팔라딘은 물오공의 광역 기절에 반응하거나 2스로 무적을 벗긴다. 상대가 기절기를 아껴도 두 장 모두 직접 표적을 친다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물팔라딘 11/27 1회 선택 <span data-checkable="21811"></span></p></div>
+<p data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-cad1a8c93699b586">풍오공·물팔라딘을 잡는다. 풍오공은 2스로 물오공을 방깎하고, 물팔라딘은 물오공의 광역 기절에 반응하거나 2스로 무적을 벗긴다. 상대가 기절기를 아껴도 두 장 모두 직접 표적을 친다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　물팔라딘 11/27 1회 선택 <span data-checkable="21811"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-f7902a462e2aaaca">불해왕·풍스카이서퍼면 불오공·물드나를 더한다. 불오공은 기절 면역으로 방깎을 넣고, 물드나는 불해왕에게 정의를 쓴다. 불발키리·풍배틀엔젤이면 물드나 대신 풍슈타르크로 체력 리더와 광역 도발을 확보하고 저격 대상을 확인한다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-2728a99141b3beba">불해왕·풍스카이서퍼를 가정하면 기존안은 물팔라딘·불오공이 기절에 대응하고 물드나가 불해왕을 때린다. 압박안은 풍유니콘까지 물오공의 무적을 벗길 수 있지만 불해왕에게 풍속성 둘을 내주고 물팔라딘도 6픽까지 남아야 한다.</p><p class="switch" data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 선택을 바꿀 때" data-opinion-key="first-picks-c594447799420c57"><b>선택을 바꿀 때</b>　물팔라딘의 폭주 룬이 비어 있고 풍유니콘이 인간형 치명타 후 다시 변신할 수 있으면 풍유니콘으로 바꾼다. 상대 불딜러가 나오면 6·7픽은 물드나와 기절 대응으로 돌린다.</p>
 <details class="route" data-plan="primary">
@@ -477,16 +750,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물팔라딘 · 물드나 · 물화백</p><p data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 비교 선택 · 압박안 풍오공 · 풍유니콘 · 상대의 다른 밴 · 풍유니콘" data-opinion-key="first-picks-0a40d771452a9a2b">풍유니콘이 잘리면 물팔라딘 2스로 물오공의 무적을 벗겨 풍오공을 잇는다. 아군이 기절하지 않아 물팔라딘 추가 턴이 없으면 물드나는 먼저 불메구미를 친다.</p></div>
 <div class="route-source"><p>공개 36판 중 이 상대 4·5픽은 3판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>물오공 선픽 36판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p25313"></span><span>풍스카이서퍼</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:30.6%"></span></span><span class="value">30.6% <small>(11/36)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p13812"></span><span>불발키리</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.7%"></span></span><span class="value">16.7% <small>(6/36)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p19712"></span><span>불해왕</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:11.1%"></span></span><span class="value">11.1% <small>(4/36)</small></span></li></ul><p class="ties muted">같은 빈도 · 물음양사</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　불발키리 + 풍배틀엔젤 외 공동 1위 1조합 · 3/36판 (8.3%) · 이 조합을 쓴 선수 3명</p><p class="sample-note muted">이 선픽을 쓴 선수 32명. 후속 풍스카이서퍼 11회 중 1회는 같은 선수가 골랐다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-16811" data-opinion-context="물오공 · 상대 1픽 · 11위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-f7902a462e2aaaca">불해왕·풍스카이서퍼면 불오공·물드나를 더한다. 불오공은 기절 면역으로 방깎을 넣고, 물드나는 불해왕에게 정의를 쓴다. 불발키리·풍배틀엔젤이면 물드나 대신 풍슈타르크로 체력 리더와 광역 도발을 확보하고 저격 대상을 확인한다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-35915" class="matchup" id="pick-35915">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>물오공 선픽 36판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p25313"></span><span>풍스카이서퍼</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:30.6%"></span></span><span class="value">30.6% <small>(11/36)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p13812"></span><span>불발키리</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.7%"></span></span><span class="value">16.7% <small>(6/36)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p19712"></span><span>불해왕</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:11.1%"></span></span><span class="value">11.1% <small>(4/36)</small></span></li></ul><p class="ties muted">같은 빈도 · 물음양사</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　불발키리 + 풍배틀엔젤 외 공동 1위 1조합 · 3/36판 (8.3%) · 이 조합을 쓴 선수 3명</p><p class="sample-note muted">이 선픽을 쓴 선수 32명. 후속 풍스카이서퍼 11회 중 1회는 같은 선수가 골랐다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-35915" class="matchup" id="pick-35915">
 <div class="match-head"><span aria-hidden="true" class="face p35915"></span><div><small>상대 1픽 · 12위</small><h2 id="title-35915">암슈타르크</h2>
-<p>시즌 선픽 97,541회 · 2.3%</p></div></div>
+<p>시즌 선픽 97,541회 · 2.3%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-22b345995001e859"><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span></div>
-<p data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-47a1c4ca57bb03aa">물오공·풍슈타르크를 먼저 잡는다. 풍슈타르크는 상대가 자주 붙인 동료를 가져오면서 직접 광역 도발을 걸고, 물오공은 3스로 한 표적의 강화와 체력을 깎는다. 두 장 다 상대의 기절을 기다릴 필요가 없다.</p><p class="status">물오공 11/27 11회 선택 <span data-checkable="16811"></span>　/　풍슈타르크 11/27 6회 선택 <span data-checkable="35913"></span></p></div>
+<p data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-47a1c4ca57bb03aa">물오공·풍슈타르크를 먼저 잡는다. 풍슈타르크는 상대가 자주 붙인 동료를 가져오면서 직접 광역 도발을 걸고, 물오공은 3스로 한 표적의 강화와 체력을 깎는다. 두 장 다 상대의 기절을 기다릴 필요가 없다.</p><p class="status">물오공 11/27 11회 선택 <span data-checkable="16811"></span>　/　풍슈타르크 11/27 6회 선택 <span data-checkable="35913"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-174bfb48371ba22a">물선인·빛노바라면 풍오공·불이프를 붙인다. 면역이 벗겨진 암슈타르크에 불이프가 망각을 걸고, 물선인은 풍오공 단일기로 압박한다. 빛노바라는 먼저 때리면 3스를 열어 주므로 광역 도발은 표적을 정한 뒤 쓴다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-4d7aac259ec4e2b1">물선인·빛노바라 앞에서 기존안의 첫 네 장은 물팔라딘의 기절 대응과 불이프 망각을 겸한다. 압박안은 그 망각을 유지하면서 풍슈타르크를 선점하고 딜러가 셋 남는다. 빛노바라에게 첫 광역 도발을 쓰면 반격용 3스를 열어 주는 비용이 있다.</p><p class="switch" data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 선택을 바꿀 때" data-opinion-key="first-picks-046e938def357594"><b>선택을 바꿀 때</b>　빠른 물오공으로 상대 면역이나 딜러를 제때 건드릴 수 없고 물팔라딘이 룬 준비됐으면 풍오공·물팔라딘으로 돌아간다. 풍슈타르크는 27회 중 22회가 같은 한 명의 후속이라 선점 자체만으로 두 장을 결정하지 않는다.</p>
 <details class="route" data-plan="primary">
@@ -508,16 +778,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　물팔라딘 · 물오공 · 불이프 · 풍유니콘</p><p data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 비교 선택 · 기존안 풍오공 · 물팔라딘 · 상대의 다른 밴 · 풍오공" data-opinion-key="first-picks-757711ff948292e6">풍오공이 잘리면 물오공·풍유니콘이 물선인을 맡는다. 불이프는 강화가 벗겨진 암슈타르크에게 2스로 방깎과 망각을 시도한다.</p></div>
 <div class="route-source"><p>공개 68판 중 이 상대 4·5픽은 4판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 1승 0패.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>암슈타르크 선픽 68판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:39.7%"></span></span><span class="value">39.7% <small>(27/68)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p30614"></span><span>빛쿠기사키 노바라</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.1%"></span></span><span class="value">19.1% <small>(13/68)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:17.6%"></span></span><span class="value">17.6% <small>(12/68)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　물화백 + 풍슈타르크 · 8/68판 (11.8%) · 이 조합을 쓴 선수 2명</p><p class="sample-note muted">이 선픽을 쓴 선수 33명. 후속 풍슈타르크 27회 중 22회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 암사령 공주 최다 (6/36판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 풍슈타르크을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-35915" data-opinion-context="암슈타르크 · 상대 1픽 · 12위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-174bfb48371ba22a">물선인·빛노바라면 풍오공·불이프를 붙인다. 면역이 벗겨진 암슈타르크에 불이프가 망각을 걸고, 물선인은 풍오공 단일기로 압박한다. 빛노바라는 먼저 때리면 3스를 열어 주므로 광역 도발은 표적을 정한 뒤 쓴다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-26313" class="matchup" id="pick-26313">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>암슈타르크 선픽 68판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:39.7%"></span></span><span class="value">39.7% <small>(27/68)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p30614"></span><span>빛쿠기사키 노바라</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.1%"></span></span><span class="value">19.1% <small>(13/68)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p18611"></span><span>물선인</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:17.6%"></span></span><span class="value">17.6% <small>(12/68)</small></span></li></ul><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　물화백 + 풍슈타르크 · 8/68판 (11.8%) · 이 조합을 쓴 선수 2명</p><p class="sample-note muted">이 선픽을 쓴 선수 33명. 후속 풍슈타르크 27회 중 22회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 암사령 공주 최다 (6/36판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 풍슈타르크을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-26313" class="matchup" id="pick-26313">
 <div class="match-head"><span aria-hidden="true" class="face p26313"></span><div><small>상대 1픽 · 13위</small><h2 id="title-26313">풍퓨어바닐라 쿠키</h2>
-<p>시즌 선픽 95,900회 · 2.3%</p></div></div>
+<p>시즌 선픽 95,900회 · 2.3%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-5536610fce7ccfd4"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p19212"></span><span>불이프</span></span></div>
-<p data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-8fcb20fecc4c3a29">풍오공·불이프를 유지한다. 불이프가 풍쿠키에게 망각과 방깎을 걸어 자기 턴 정화·실드·반사를 끊고, 풍오공은 물인드라 같은 물속성 동료를 직접 때린다. 풍쿠키의 능동 2스 회복·실드는 남는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div>
+<p data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-8fcb20fecc4c3a29">풍오공·불이프를 유지한다. 불이프가 풍쿠키에게 망각과 방깎을 걸어 자기 턴 정화·실드·반사를 끊고, 풍오공은 물인드라 같은 물속성 동료를 직접 때린다. 풍쿠키의 능동 2스 회복·실드는 남는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-fae19ca784e9f99e">물인드라·풍슈타르크면 불레골라스·풍유니콘을 붙인다. 불레골라스는 풍쿠키나 풍슈타르크, 풍유니콘은 물인드라를 겨냥한다. 물인드라가 부활할 상황이면 불이프로 망각을 시도하고, 풍유니콘은 망각이 들어간 것을 보고 마무리한다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-1dec4b58199244dc">물인드라·풍슈타르크 앞에서 기존안은 두 번째 차례까지 불이프의 망각, 불레골라스의 강탈, 풍속성 공격 둘을 갖춘다. 압박안은 물오공·불레골라스가 일찍 강화를 지우지만 불이프가 6픽 전까지 비어 있어야 같은 망각을 확보한다.</p><p class="switch" data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 선택을 바꿀 때" data-opinion-key="first-picks-1ecb029a7ced184c"><b>선택을 바꿀 때</b>　불레골라스가 먼저 쳐서 풍쿠키를 두 차례 안에 몰아낼 화력이면 물오공·불레골라스를 쓴다. 불이프 미준비라면 6·7픽은 풍오공·풍유니콘으로 바꾸고, 부활 대응이 남지 않으면 물인드라를 밴한다.</p>
 <details class="route" data-plan="primary">
@@ -539,16 +806,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　불레골라스 · 풍오공 · 불이프 · 불해왕</p><p data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 비교 선택 · 압박안 물오공 · 불레골라스 · 상대의 다른 밴 · 물오공" data-opinion-key="first-picks-02ddd07036bdc158">물오공이 잘리면 불이프 2스로 풍쿠키에게 방깎·망각을 걸고 불레골라스가 이어 친다. 실제 실드가 남으면 불해왕이 먼저 걷어낸다.</p></div>
 <div class="route-source"><p>공개 72판 중 이 상대 4·5픽은 11판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>풍퓨어바닐라 쿠키 선픽 72판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p28311"></span><span>물인드라</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:52.8%"></span></span><span class="value">52.8% <small>(38/72)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:26.4%"></span></span><span class="value">26.4% <small>(19/72)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p23711"></span><span>물화백</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.4%"></span></span><span class="value">19.4% <small>(14/72)</small></span></li></ul><p class="ties muted">같은 빈도 · 물간달프</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　물인드라 + 풍슈타르크 · 11/72판 (15.3%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 31명. 후속 물인드라 38회 중 29회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물화백·물인드라 최다 (9/30판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-26313" data-opinion-context="풍퓨어바닐라 쿠키 · 상대 1픽 · 13위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-fae19ca784e9f99e">물인드라·풍슈타르크면 불레골라스·풍유니콘을 붙인다. 불레골라스는 풍쿠키나 풍슈타르크, 풍유니콘은 물인드라를 겨냥한다. 물인드라가 부활할 상황이면 불이프로 망각을 시도하고, 풍유니콘은 망각이 들어간 것을 보고 마무리한다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-30512" class="matchup" id="pick-30512">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>풍퓨어바닐라 쿠키 선픽 72판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p28311"></span><span>물인드라</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:52.8%"></span></span><span class="value">52.8% <small>(38/72)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:26.4%"></span></span><span class="value">26.4% <small>(19/72)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p23711"></span><span>물화백</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.4%"></span></span><span class="value">19.4% <small>(14/72)</small></span></li></ul><p class="ties muted">같은 빈도 · 물간달프</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　물인드라 + 풍슈타르크 · 11/72판 (15.3%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 31명. 후속 물인드라 38회 중 29회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물화백·물인드라 최다 (9/30판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-30512" class="matchup" id="pick-30512">
 <div class="match-head"><span aria-hidden="true" class="face p30512"></span><div><small>상대 1픽 · 14위</small><h2 id="title-30512">불후시구로 메구미</h2>
-<p>시즌 선픽 89,648회 · 2.2%</p></div></div>
+<p>시즌 선픽 89,648회 · 2.2%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-26c35e7d0770ca76"><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p19212"></span><span>불이프</span></span></div>
-<p data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-4ad62462598f89cf">물오공·불이프를 먼저 낸다. 물오공은 속성 우위 3스로 불메구미 본체를 노리고, 불이프는 망각으로 동료 피격 시 게이지 상승과 공격 시 강화 강탈을 끊는다. 불메구미를 때릴 때는 자기 패시브로 게이지가 차지 않는다.</p><p class="status">물오공 11/27 11회 선택 <span data-checkable="16811"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div>
+<p data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-4ad62462598f89cf">물오공·불이프를 먼저 낸다. 물오공은 속성 우위 3스로 불메구미 본체를 노리고, 불이프는 망각으로 동료 피격 시 게이지 상승과 공격 시 강화 강탈을 끊는다. 불메구미를 때릴 때는 자기 패시브로 게이지가 차지 않는다.</p><p class="status">물오공 11/27 11회 선택 <span data-checkable="16811"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-1edd2c1f03db92c1">빛오라클·빛고죠면 풍오공·불레골라스가 한 명을 집중한다. 재차 면역이 깔리면 불레골라스의 강탈을 먼저 쓴다. 빛드나·풍쿠키면 빛드나에 망각을 걸고 풍쿠키를 불딜러가 치도록 불레골라스·풍오공을 둔다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-994e30c7a852e8d7">빛오라클·빛고죠가 붙는 분기에서 기존안은 기절이 나면 턴을 얻지만 6·7픽까지 망각이 없고 광역 정화가 둘이다. 압박안은 불메구미 본체를 속성 우위로 밀고 망각까지 쓸 수 있다. 빛오라클이 정화한 직후가 실제 처치 시도 시점이다.</p><p class="switch" data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 선택을 바꿀 때" data-opinion-key="first-picks-fe7d395ee253e8af"><b>선택을 바꿀 때</b>　물오공이 느려 불메구미에게 먼저 기절·게이지 감소를 받을 세팅이거나 불이프를 쓸 수 없으면 풍오공·물팔라딘으로 바꾼다. 물팔라딘은 아군에게 기절·수면 등 행동불능이 걸려야 반응한다. 게이지만 깎이면 턴을 얻지 못한다.</p>
 <details class="route" data-plan="primary">
@@ -570,16 +834,13 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　풍오공 · 물팔라딘 · 불레골라스 · 불이프</p><p data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 비교 선택 · 기존안 풍오공 · 물팔라딘 · 상대의 다른 밴 · 물오공" data-opinion-key="first-picks-9846ac1674f6daef">물오공이 잘리면 물팔라딘 2스가 불메구미의 강화를 벗기고 도발한다. 불이프·불레골라스가 이어 치되, 빛오라클이 정화를 이미 썼으면 망각도 다시 건다.</p></div>
 <div class="route-source"><p>공개 31판 중 이 상대 4·5픽은 2판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>불후시구로 메구미 선픽 31판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p16614"></span><span>빛드래곤나이트</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.4%"></span></span><span class="value">19.4% <small>(6/31)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.1%"></span></span><span class="value">16.1% <small>(5/31)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p15714"></span><span>빛오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:12.9%"></span></span><span class="value">12.9% <small>(4/31)</small></span></li></ul><p class="ties muted">같은 빈도 · 풍퓨어바닐라 쿠키, 풍슈타르크</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　빛드래곤나이트 + 풍퓨어바닐라 쿠키 · 3/31판 (9.7%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 21명. 후속 빛드래곤나이트 6회 중 4회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물오공 최다 (4/18판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 물오공을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-30512" data-opinion-context="불후시구로 메구미 · 상대 1픽 · 14위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-1edd2c1f03db92c1">빛오라클·빛고죠면 풍오공·불레골라스가 한 명을 집중한다. 재차 면역이 깔리면 불레골라스의 강탈을 먼저 쓴다. 빛드나·풍쿠키면 빛드나에 망각을 걸고 풍쿠키를 불딜러가 치도록 불레골라스·풍오공을 둔다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article><article aria-labelledby="title-31315" class="matchup" id="pick-31315">
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>불후시구로 메구미 선픽 31판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p16614"></span><span>빛드래곤나이트</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:19.4%"></span></span><span class="value">19.4% <small>(6/31)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p16811"></span><span>물오공</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:16.1%"></span></span><span class="value">16.1% <small>(5/31)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p15714"></span><span>빛오라클</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:12.9%"></span></span><span class="value">12.9% <small>(4/31)</small></span></li></ul><p class="ties muted">같은 빈도 · 풍퓨어바닐라 쿠키, 풍슈타르크</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　빛드래곤나이트 + 풍퓨어바닐라 쿠키 · 3/31판 (9.7%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 21명. 후속 빛드래곤나이트 6회 중 4회는 같은 선수가 골랐다.</p><p class="sample-note muted">최근 상대 50명을 선픽자에서 빼면 물오공 최다 (4/18판). 한 선수의 고정 조합에 대비해 두 자리를 모두 쓰기는 이르다.</p><p class="sample-note">여기서 물오공을 내가 먼저 집으면 상대 4·5픽 후보에서 빠진다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article><article aria-labelledby="title-31315" class="matchup" id="pick-31315">
 <div class="match-head"><span aria-hidden="true" class="face p31315"></span><div><small>상대 1픽 · 15위</small><h2 id="title-31315">암사령 공주</h2>
-<p>시즌 선픽 76,498회 · 1.8%</p></div></div>
+<p>시즌 선픽 76,498회 · 1.8%</p></div><button class="cp-find-again" type="button">선픽 변경</button></div>
 <div class="pick"><h3>추천 · 내 2·3픽</h3>
 <div class="picks" data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-0b02268bac71fb37"><span class="unit"><span aria-hidden="true" class="face p16813"></span><span>풍오공</span></span> <span aria-hidden="true">+</span> <span class="unit"><span aria-hidden="true" class="face p19212"></span><span>불이프</span></span></div>
-<p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-2e0cd05a91722fa3">풍오공·불이프를 잡아 암사령 공주 본체를 압박한다. 불이프의 망각은 체력이 빠진 동료의 피해 증가와 사망 시 게이지 충전을 함께 막고, 풍오공은 2스 방깎 뒤 다시 턴을 당긴다. 다른 몹의 체력을 조금씩 깎아 주지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div>
+<p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 추천 · 내 2·3픽" data-opinion-key="first-picks-2e0cd05a91722fa3">풍오공·불이프를 잡아 암사령 공주 본체를 압박한다. 불이프의 망각은 체력이 빠진 동료의 피해 증가와 사망 시 게이지 충전을 함께 막고, 풍오공은 2스 방깎 뒤 다시 턴을 당긴다. 다른 몹의 체력을 조금씩 깎아 주지 않는다.</p><p class="status">풍오공 11/27 16회 선택 <span data-checkable="16813"></span>　/　불이프 11/27 1회 선택 <span data-checkable="19212"></span></p></div><div aria-label="이 대진 바로가기" class="cp-jumps" role="group"><button data-cp-jump=".call" type="button">다음 픽</button><button data-cp-jump=".routes" type="button">밴픽 시뮬레이션</button><button data-cp-jump=".cp-frequency" type="button">후속 확률</button></div><div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-1e2150b78929082e">빛피닉스·풍드나가 같이 나오면 물화백·불레골라스를 더한다. 물화백은 강화 해제에 붙은 방깎을 정화할 길을 열고, 불레골라스는 풍드나의 속도 제한 중에도 공격 강화로 한 명을 때린다. 불발키리·불사막여왕이면 불해왕·물오공으로 부활 쿨밀과 단일 압박을 더한다.</p></div>
 <div class="routes"><h3>두 가지 밴픽을 끝까지 비교하면</h3>
 <p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 두 가지 밴픽을 끝까지 비교하면" data-opinion-key="first-picks-e7bc39edd691d295">빛피닉스·풍드나가 나오면 기존안의 풍오공·불이프는 속도 제한 아래에서도 방깎과 망각을 남긴다. 압박안의 물오공·불레골라스는 강화 제거와 다단 공격이 빠르지만 추가 공속의 이득이 줄고, 6픽까지 불이프를 열어 줘야 한다.</p><p class="switch" data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 선택을 바꿀 때" data-opinion-key="first-picks-adc0d0a178334f41"><b>선택을 바꿀 때</b>　빠른 물오공과 불레골라스가 공주에게 연속으로 행동하고 상대 회복 전에 처치할 화력이면 압박안을 쓴다. 불이프 미준비면 6·7픽은 풍오공·물화백으로 바꾸고, 첫 집중 공격으로 공주를 잡기 어렵다면 공주를 밴한다.</p>
 <details class="route" data-plan="primary">
@@ -601,12 +862,9 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 <p class="four"><b>내 네 장</b>　물오공 · 풍오공 · 불이프 · 물화백</p><p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 비교 선택 · 압박안 물오공 · 불레골라스 · 상대의 다른 밴 · 불레골라스" data-opinion-key="first-picks-3074930f89ea059c">불레골라스가 잘리면 불이프가 공주에게 망각·방깎을 걸고 물오공이 3스로 잇는다. 풍드나가 체력이 낮은 상태에서 방무를 쓰기 전에 공주 한 명을 먼저 정리할 피해가 필요하다.</p></div>
 <div class="route-source"><p>공개 27판 중 이 상대 4·5픽은 2판. 상대 8·9픽까지 같은 순서로 이어진 경기는 1판. 내 2·3픽까지 일치한 공개 기록은 0판이다.</p><p>이 선픽에 이 두 장을 낸 내 전적 · 11월 25~27일 0판.
 시즌 39의 이전 보관분 0판.</p></div></details></div>
-<div><h3>상대가 4·5픽에 붙인 몹</h3><small>암사령 공주 선픽 27판 · 다음 두 자리 중 한 곳에 나온 비율</small>
-<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p13812"></span><span>불발키리</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:18.5%"></span></span><span class="value">18.5% <small>(5/27)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:14.8%"></span></span><span class="value">14.8% <small>(4/27)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p14514"></span><span>빛피닉스</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:11.1%"></span></span><span class="value">11.1% <small>(3/27)</small></span></li></ul><p class="ties muted">같은 빈도 · 풍드나</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　빛피닉스 + 풍드나 · 2/27판 (7.4%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 22명. 후속 불발키리 5회 중 2회는 같은 선수가 골랐다.</p></div>
-<div class="call"><h3>실제로 보이면 · 내 6·7픽</h3><p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 실제로 보이면 · 내 6·7픽" data-opinion-key="first-picks-1e2150b78929082e">빛피닉스·풍드나가 같이 나오면 물화백·불레골라스를 더한다. 물화백은 강화 해제에 붙은 방깎을 정화할 길을 열고, 불레골라스는 풍드나의 속도 제한 중에도 공격 강화로 한 명을 때린다. 불발키리·불사막여왕이면 불해왕·물오공으로 부활 쿨밀과 단일 압박을 더한다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-4dd672db6f72a390">준비 목록에서 망각을 공급하는 몹은 불이프 한 장이다. 잘리면 공주 본체부터 잡거나 상대 밴을 공주로 바꿀 조건을 정해야 한다.</p></div>
-<details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details>
-</article></section></div>
-<footer><details class="method"><summary>시뮬레이션과 실제 전적의 범위</summary>
+<aside aria-label="상대 후속과 준비 범위" class="cp-intel"><div class="cp-frequency"><h3>상대가 4·5픽에 붙인 몹</h3><small>암사령 공주 선픽 27판 · 다음 두 자리 중 한 곳에 나온 비율</small>
+<ul class="frequency"><li><span class="unit"><span aria-hidden="true" class="face p13812"></span><span>불발키리</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:18.5%"></span></span><span class="value">18.5% <small>(5/27)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p35913"></span><span>풍슈타르크</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:14.8%"></span></span><span class="value">14.8% <small>(4/27)</small></span></li><li><span class="unit"><span aria-hidden="true" class="face p14514"></span><span>빛피닉스</span></span><span aria-hidden="true" class="track"><span class="fill" style="width:11.1%"></span></span><span class="value">11.1% <small>(3/27)</small></span></li></ul><p class="ties muted">같은 빈도 · 풍드나</p><p class="pairs-line"><b>가장 많이 붙은 두 장</b>　빛피닉스 + 풍드나 · 2/27판 (7.4%) · 이 조합을 쓴 선수 1명</p><p class="sample-note muted">이 선픽을 쓴 선수 22명. 후속 불발키리 5회 중 2회는 같은 선수가 골랐다.</p></div><div class="gap"><h3>준비 목록에서 부족한 점</h3><p data-opinion-anchor="#pick-31315" data-opinion-context="암사령 공주 · 상대 1픽 · 15위 · 준비 목록에서 부족한 점" data-opinion-key="first-picks-4dd672db6f72a390">준비 목록에서 망각을 공급하는 몹은 불이프 한 장이다. 잘리면 공주 본체부터 잡거나 상대 밴을 공주로 바꿀 조건을 정해야 한다.</p></div><details><summary>추천 두 장까지 같은 경기의 실제 후속</summary><p>표본에서 추천 두 장까지 일치한 판은 0판.</p></details></aside></article></section></div>
+<footer><div class="cp-field-notes"><details class="changes"><summary>기본 두 장을 바꾼 선픽 7개</summary><p><a href="#pick-15713">풍오라클</a> · <a href="#pick-25313">풍스카이서퍼</a> · <a href="#pick-35913">풍슈타르크</a> · <a href="#pick-30713">풍드라칸 전사</a> · <a href="#pick-17411">물신수승</a> · <a href="#pick-35915">암슈타르크</a> · <a href="#pick-30512">불후시구로 메구미</a></p></details><div class="limits"><b>준비 목록만으론 까다로운 선픽</b><p><a href="#pick-25313">풍스카이서퍼</a> · <a href="#pick-21415">암하프술사</a></p></div></div><details class="method"><summary>시뮬레이션과 실제 전적의 범위</summary>
 <p><b>가상 밴픽</b>　각 안은 픽 여섯 차례와 가정한 양쪽 밴을 따라간다. 내 밴을 고정하고 상대 밴을 바꿨을 때도 첫 공격을 이어갈 수 있는지 비교했다. 전투 순서와 피해량은 룬·저항·상대 선택에 따라 달라진다.</p>
 <p><b>개인 대조</b>　11월 25~27일 보관한 57판과 그보다 앞서 보관한 시즌 39 전적 362판에서 상대 1픽과 내 2·3픽이 같은 기록을 각각 셌다. 이전 보관분은 내 다섯 장이 확인되고 물아라곤을 쓰지 않은 판만 썼다.</p>
 <p><b>선픽 순위</b>　11월 27일 14:26 뉴질랜드 시간. Lucksack의 P1, P2~3, G1~3 구간에서 1픽으로 표시된 4,169,175건을 합산했다. 비중의 분모도 이 합계다. <a href="https://lucksack.gg/meta-dashboard">Lucksack 메타 대시보드</a></p>
@@ -615,7 +873,7 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
 랭크 제한 없는 상대권 표본이며 자주 만난 선수의 조합에 영향을 받는다. 내 2·3픽에 따라 상대 선택도 달라진다. <a href="https://lucksack.gg/player/291377">Lucksack 개인 전적</a></p>
 <p><b>내 준비 목록</b>　11월 26일의 22마리에 27일 16판의 실제 픽을 대조했다. 풍유니콘·불레골라스는 룬작 완료, 물스트라이커는 격노 세팅을 확인했다.
 기존 22마리 밖에서도 27일 불발키리·불듀크·풍음양사·풍사령 공주 선택이 확인됐다. 같은 브라우저에서 내 룬 준비표를 저장했으면 추천 몹 옆에 체크 여부가 표시된다. 픽 수는 밴 전 선택 횟수이며, 당시 룬 수치와 선턴은 전적에 기록되지 않는다. <a href="roster.html">준비 몹과 룬 조건</a></p>
-</details></footer></main><script>(() => {
+<p>상대 선픽에 내밀 두 장을 고르고, 첫 딜러가 밴돼도 누구를 칠지 확인하세요. 각 선픽에 두 가지 가상 밴픽과 실제 후속 픽 빈도를 담았습니다.</p></details></footer></main><script>(() => {
   const cards = [...document.querySelectorAll('.matchup')];
   const select = document.querySelector('#opener-select');
   const links = [...document.querySelectorAll('.ranks a')];
@@ -706,7 +964,9 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
       '입력한 의견은 지금 쓰는 브라우저에 자동 저장돼요.';
   }
   function updateCount() {
-    el('list-open').textContent = '내 의견 · ' + notes.size;
+    el('list-open').textContent = '내 의견';
+    el('list-open').dataset.count = String(notes.size);
+    el('list-open').setAttribute('aria-label', '내 의견 ' + notes.size + '개');
     el('copy').disabled = !notes.size;
   }
   function writeNote(n) {
@@ -734,6 +994,14 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
       const empty = document.createElement('li');
       empty.className = 'opinion-empty';
       empty.textContent = '아직 작성한 의견이 없어요.';
+      const begin = document.createElement('button');
+      begin.type = 'button';
+      begin.textContent = '첫 의견 달기';
+      begin.addEventListener('click', () => {
+        dialog.close();
+        if (!editing) el('mode').click();
+      });
+      empty.append(begin);
       list.append(empty);
     }
     for (const n of sortedNotes()) {
@@ -750,7 +1018,17 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
       edit.className = 'opinion-edit';
       edit.textContent = '수정';
       edit.addEventListener('click', () => openEditor(n, true));
-      item.append(context, quote, body, edit);
+      const actions = document.createElement('div');
+      actions.className = 'opinion-entry-actions';
+      actions.append(edit);
+      if (typeof n.source === 'string' && /^https:\/\/andykimhunnyleo\.github\.io\/rta-review\/(?:index\.html|first-picks\.html|roster\.html)?[?#]/.test(n.source)) {
+        const link = document.createElement('a');
+        link.href = n.source;
+        link.textContent = '원문 보기';
+        link.addEventListener('click', () => dialog.close());
+        actions.append(link);
+      }
+      item.append(context, quote, body, actions);
       list.append(item);
     }
   }
@@ -907,5 +1185,234 @@ details>summary{cursor:pointer;color:var(--green);font-weight:650}details p{marg
   });
   updateCount();
   storageMessage();
+})();
+</script><script>(() => {
+  const page = document.documentElement.dataset.rtaPage;
+  const normalize = value => value.toLowerCase().replace(/[\s·()]/g, '');
+  function matchesName(name, query) {
+    const normalized = normalize(name);
+    if (normalized.includes(query)) return true;
+    // Names such as 풍스카이서퍼 and 풍퓨어바닐라 쿠키 are often shortened after the element.
+    return /^[물불풍빛암].+/.test(query) && normalized[0] === query[0] && normalized.includes(query.slice(1));
+  }
+  function focusAndReveal(element) {
+    if (!element.hasAttribute('tabindex') && !element.matches('input')) element.tabIndex = -1;
+    element.focus({preventScroll: true});
+    element.scrollIntoView({block: 'start', behavior: 'instant'});
+  }
+
+  if (page === 'first-picks') {
+    const field = document.querySelector('#cp-opener-search');
+    const finder = document.querySelector('.cp-finder');
+    const links = [...finder.querySelectorAll('.ranks a')];
+    function filter() {
+      const query = normalize(field.value);
+      for (const link of links) {
+        link.parentElement.hidden = !matchesName(link.querySelector('b').textContent, query);
+      }
+      finder.querySelector('.cp-empty').hidden = links.some(link => !link.parentElement.hidden);
+    }
+    field.addEventListener('input', filter);
+    field.addEventListener('keydown', event => {
+      if (event.key !== 'Enter' || event.isComposing || event.keyCode === 229) return;
+      const first = links.find(link => !link.parentElement.hidden);
+      if (first) { event.preventDefault(); first.click(); field.blur(); }
+    });
+    function syncOpener() {
+      field.value = '';
+      filter();
+      const current = links.find(link => link.getAttribute('aria-current') === 'true');
+      if (!current || !window.matchMedia('(max-width:760px)').matches) return;
+      const rail = finder.querySelector('.ranks');
+      // Move the rail without changing the browser's position within the draft.
+      const bounds = current.getBoundingClientRect();
+      const viewport = rail.getBoundingClientRect();
+      if (bounds.left < viewport.left || bounds.right > viewport.right) {
+        rail.scrollLeft += bounds.left - viewport.left - (viewport.width - bounds.width) / 2;
+      }
+    }
+    window.addEventListener('hashchange', syncOpener);
+    finder.querySelector('.ranks').addEventListener('click', event => {
+      const link = event.target.closest('a');
+      if (link && location.hash === link.hash && field.value) syncOpener();
+    });
+    document.querySelector('main').addEventListener('click', event => {
+      if (event.target.closest('.cp-find-again')) {
+        focusAndReveal(field);
+        return;
+      }
+      const button = event.target.closest('[data-cp-jump]');
+      if (button) focusAndReveal(button.closest('.matchup').querySelector(button.dataset.cpJump));
+    });
+    syncOpener();
+  }
+
+  if (page === 'roster') {
+    const tabs = [...document.querySelectorAll('[data-cp-view]')];
+    const choices = [...document.querySelectorAll('[data-cp-group]')];
+    const groups = [...document.querySelectorAll('.cp-unit-group')];
+    const field = document.querySelector('#cp-unit-search');
+    const status = document.querySelector('.cp-search-status');
+    const panels = {units: document.querySelector('#cp-units'), guide: document.querySelector('#cp-guide')};
+    const wide = window.matchMedia('(min-width:1200px)');
+    let group = '';
+    let selectedView = 'units';
+    function showPanel(which) {
+      selectedView = which;
+      for (const item of tabs) item.setAttribute('aria-pressed', String(item.dataset.cpView === which));
+      panels.guide.hidden = !wide.matches && which !== 'guide';
+      panels.units.hidden = !wide.matches && which !== 'units';
+    }
+    function applyFilter() {
+      const query = normalize(field.value);
+      let count = 0;
+      for (const section of groups) {
+        let inGroup = 0;
+        for (const card of section.querySelectorAll('.card')) {
+          card.hidden = Boolean(group && group !== section.id) || !normalize(card.dataset.cpName).includes(query);
+          if (!card.hidden) inGroup++;
+        }
+        count += inGroup;
+        section.hidden = inGroup === 0;
+      }
+      for (const item of choices) item.setAttribute('aria-pressed', String(item.dataset.cpGroup === group));
+      status.hidden = !query && !group;
+      status.textContent = count ? count + '마리' : '해당하는 몬스터가 없어요.';
+    }
+    function restoreTarget(scroll) {
+      const id = location.hash.slice(1);
+      const target = document.getElementById(id);
+      const which = target && panels.guide.contains(target) ? 'guide' : 'units';
+      showPanel(which);
+      if (target && which === 'units') {
+        field.value = '';
+        group = '';
+        applyFilter();
+      }
+      if (scroll && target && target.getClientRects().length) target.scrollIntoView({block:'start'});
+    }
+    for (const btn of tabs) btn.addEventListener('click', () => {
+      const section = panels[btn.dataset.cpView];
+      // Keep section deep links shareable and browser back/forward in sync.
+      if (location.hash !== '#' + section.id) history.pushState(null, '', '#' + section.id);
+      showPanel(btn.dataset.cpView);
+    });
+    for (const btn of choices) btn.addEventListener('click', () => { group = btn.dataset.cpGroup; applyFilter(); });
+    field.addEventListener('input', applyFilter);
+    window.addEventListener('hashchange', () => restoreTarget(true));
+    document.querySelector('#cp-guide nav')?.addEventListener('click', event => {
+      const link = event.target.closest('a[href^="#"]');
+      if (link && location.hash === link.hash) restoreTarget(true);
+    });
+    wide.addEventListener('change', () => showPanel(selectedView));
+    restoreTarget(Boolean(location.hash));
+    applyFilter();
+  }
+})();
+</script><script>(() => {
+  const byId = id => document.getElementById(id);
+  const nav = byId('rta-app-nav');
+  const library = byId('app-library');
+  const opener = byId('app-library-open');
+  const mode = byId('opinion-mode');
+  const notes = byId('opinion-list-open');
+  if (!mode || !notes) return;
+  byId('app-mode-slot').append(mode);
+  byId('app-opinions-slot').append(notes);
+  const tip = byId('opinion-tip');
+  byId('rta-app-head').after(tip);
+  tip.classList.add('app-opinion-tip');
+  document.documentElement.classList.add('rta-shell-ready');
+  const topicLinks = [...nav.querySelectorAll('[data-archive-topic]')];
+  const primary = nav.querySelector('[data-app-view=main]');
+  // Returning through an app tab should take the reader back to the draft they left.
+  // Direct links, the library and the browser's back button keep their own destination.
+  const currentView = document.documentElement.dataset.rtaPage;
+  function rememberDraft() {
+    let suffix;
+    if (currentView === 'first-picks') {
+      suffix = '#' + document.getElementById('opener-select').value;
+    } else if (currentView === 'main' && document.querySelector('#loss-feedback.topic-visible')) {
+      const cards = [...document.querySelectorAll('.loss-match[open]')];
+      const card = cards.find(c => c.classList.contains('is-selected')) || cards.reverse().find(c => c.getClientRects().length);
+      if (card) suffix = '?rta=' + encodeURIComponent(card.dataset.matchKey) + '#loss-match-detail';
+      else {
+        const filters = new URLSearchParams();
+        const day = byId('match-date')?.value;
+        const result = document.querySelector('[data-match-result][aria-pressed=true]')?.dataset.matchResult;
+        if (day) filters.set('day', day);
+        if (result && result !== 'all') filters.set('result', result);
+        suffix = (filters.size ? '?' + filters.toString() : '') + '#loss-feedback';
+      }
+    }
+    if (suffix) {
+      try { sessionStorage.setItem('rta-webapp-tab-' + currentView, suffix); } catch {}
+    }
+  }
+  function restoreTabLinks() {
+    try {
+      for (const link of nav.querySelectorAll('a[data-app-view]')) {
+        const view = link.dataset.appView;
+        if (view === currentView) continue;
+        const saved = sessionStorage.getItem('rta-webapp-tab-' + view);
+        if (!saved || !/^(?:#pick-\d+|\?rta=[\w%.:-]+#loss-match-detail|(?:\?day=\d{4}-\d{2}-\d{2}(?:&result=(?:win|loss))?)?#loss-feedback)$/.test(saved)) continue;
+        link.setAttribute('href',link.getAttribute('href').split(/[?#]/)[0] + saved);
+      }
+    } catch {}
+  }
+  restoreTabLinks();
+  nav.addEventListener('click',rememberDraft,true);
+  window.addEventListener('pagehide',rememberDraft);
+  window.addEventListener('pageshow',restoreTabLinks);
+  function reflectLocation() {
+    if (document.documentElement.dataset.rtaPage !== 'main') return;
+    const topic = document.querySelector('#reader-bar .reader-tabs [aria-current=page]');
+    const archive = topic && topic.hash !== '#loss-feedback';
+    primary.toggleAttribute('data-in-archive', !!archive);
+    if (archive) primary.removeAttribute('aria-current');
+    else primary.setAttribute('aria-current','page');
+    for (const link of topicLinks) {
+      if (archive && topic.hash === link.hash) link.setAttribute('aria-current','location');
+      else link.removeAttribute('aria-current');
+    }
+  }
+  addEventListener('hashchange',reflectLocation);
+  reflectLocation();
+
+  const settings = [...library.querySelectorAll('[data-proxy]')];
+  function reflectSettings() {
+    for (const button of settings) {
+      const original = document.querySelector('[data-reader-' + button.dataset.proxy + ']');
+      button.setAttribute('aria-pressed', original.getAttribute('aria-pressed') || 'false');
+      button.textContent = original.textContent;
+    }
+  }
+  opener.addEventListener('click',()=>{reflectSettings();library.showModal();});
+  library.querySelector('.rta-close').addEventListener('click',()=>library.close());
+  library.addEventListener('click', event => {
+    const control = event.target.closest('[data-proxy]');
+    if (control) {
+      document.querySelector('[data-reader-' + control.dataset.proxy + ']').click();
+      reflectSettings(); reflectLocation();
+    }
+    if (event.target.closest('a')) library.close();
+  });
+  try { if (sessionStorage.getItem('rta-opinion-mode') === 'on' && mode.getAttribute('aria-pressed') !== 'true') mode.click(); } catch {}
+  mode.addEventListener('click', () => {
+    try { sessionStorage.setItem('rta-opinion-mode', mode.getAttribute('aria-pressed') === 'true' ? 'on' : 'off'); } catch {}
+  });
+
+  const viewport = window.visualViewport;
+  if (viewport) {
+    function fitSheet() {
+      if (viewport.scale !== 1) return;
+      const gap = Math.max(0, document.documentElement.clientHeight - viewport.height - viewport.offsetTop);
+      document.documentElement.style.setProperty('--app-visual-height', viewport.height + 'px');
+      document.documentElement.style.setProperty('--app-keyboard', gap + 'px');
+    }
+    viewport.addEventListener('resize',fitSheet);
+    viewport.addEventListener('scroll',fitSheet);
+    fitSheet();
+  }
 })();
 </script></body></html>
